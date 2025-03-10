@@ -5,105 +5,237 @@
 body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
     font-family: 'Archivo-ExtraLight', sans-serif;
-    color: #1A1F21;
     margin: 0;
 }
 
-/* HOME */
-
+/* NAVBAR */
 header{
-    height: 100vh;
-    padding: 0 1rem;
+    color: #1A1F21;
 }
 
-nav .navbar-mobile .navbar{
+header nav{
     display: flex;
     justify-content: space-between;
-    height: 100%;
-    align-items: center;
 }
 
-nav .navbar-mobile .navbar h4{
-    font-family: 'ClashGrotesk-Regular', sans-serif;
-    font-size: 1.25rem;
-    margin: 0;
+header nav h4{
+    margin: 1rem 1.25rem;    
+    font-family: 'ClashGrotesk-Semibold', sans-serif;
+    font-size: 1.2rem;
 }
 
-nav .navbar-mobile .navbar img{
-    width: 40px;
-    filter: invert(6%) sepia(7%) saturate(1763%) hue-rotate(151deg) brightness(98%) contrast(87%);
-}
-
-.welcome {
+header nav ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
     text-align: center;
 }
 
-.welcome h1{
-    font-family: 'ClashGrotesk-Bold', sans-serif;
-    font-size: 2.5rem;
-    margin-top: 100px;
-    margin-bottom: 0;
+header nav ul a{
+    text-decoration: none;
+    padding: 0.75rem 0;
 }
 
-.welcome p{
-    font-size: 1.125rem;
-    margin-bottom: 40px;
+header nav ul a li{
+    color: #1A1F21;
+    font-size: 0.75rem;
+    font-weight: 700;
 }
 
-.welcome p img{
-    width: 1rem;
-    margin-right: 0.3rem;
-    filter: invert(6%) sepia(7%) saturate(1763%) hue-rotate(151deg) brightness(98%) contrast(87%);
+header nav ul a:hover li{
+    font-size: 1rem;
+    font-family: 'Archivo-Regular', sans-serif;
 }
 
-.welcome h3{
-    font-family: 'Archivo-SemiBold', sans-serif;
-    font-size: 1.25rem;
+header nav .burger-menu{
+    display: flex;
+    align-items: center; /* Vertically centering the image syaratnya displaynya harus flex */
 }
 
-@media (min-width: 768px){
-    body{
-        background-color: aquamarine;
-    }
-    .welcome h1{
-        font-size: 4rem;
-    }
+header nav .burger-menu img{
+    display: none;
+    margin: 1rem 1.25rem;  
 
-    .welcome p{
-        font-size: 1.2rem;
+}
+
+@media (max-width: 768px){
+
+    header nav{
+        flex-wrap: wrap;
     }
 
-    .welcome h3{
-        font-size: 1.5rem;
+    header nav ul{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+
+    }
+
+    header nav ul.hidden{ /* hidden class penulisannya memang harus gini*/
+        display: none;
+    }
+
+    header nav a.cv{ /* hidden class penulisannya memang harus gini*/
+        display: none;
     }
     
+    header nav .burger-menu img{
+        display: flex;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (min-width: 769px){
+    header nav h4{
+        display: flex;
+        align-items: center;
+        font-family: 'Archivo-Light', sans-serif;
+        font-size: 1.1rem;
+        margin: 1rem 2rem; 
+    }
+
+    header nav ul{
+        margin: auto;
+        border-radius: 999px;
+        background: linear-gradient(60deg, #d7eaf5 70%, #D6E4ED66 100%); /* 66 itu 40% opacity  nya */
+        box-shadow: 3px 4px 7px 0px rgba(0, 0, 0, 0.1);
+    }
+    
+    header nav ul a{  
+        padding: 7px 30px;
+        margin: 0;
+        border-radius: 999px;
+    }
+    
+    header nav ul a li{
+        font-family: 'Archivo-Thin', sans-serif;
+        font-size: 1rem;
+    }
+
+    header nav ul a.mobile-cv{
+        display: none;
+    }
+
+    header nav ul a.current, header nav ul a:hover{
+        background: linear-gradient(60deg, #489FC366, #489FC3); /* 66 itu 40% opacity  nya */
+    }
+
+    header nav ul a.current li, header nav ul a:hover li{
+        font-family: 'Archivo-Bold', sans-serif;
+        color: white; 
+    }
+
+    header nav a.cv{
+        font-family: 'ClashGrotesk-Medium', sans-serif;
+        text-decoration: none;
+        color: #1A1F21;
+        border: #1A1F21 1px solid;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        margin: 1rem 1.25rem;
+        padding: 7px 16px;   
+        font-size: 1rem; 
+        margin: 1rem 2rem; 
+    }
+
+    header nav a.cv img{
+        width: 22px;
+        margin-right: 5px;
+    }
+}
+
+/* HOME */
+main .home{
+    color: #1A1F21;
+    margin-top: 110px;
+    height: calc(100vh - 148px);
+}
+
+main .home .landing-page{
+    text-align: center;
+}
+
+main .home .landing-page h1{
+    font-family: 'ClashGrotesk-Bold', sans-serif;
+    font-size: 1.8rem;
+    margin: 10px 0;
+    padding: 0;
+}
+
+main .home .landing-page p{
+    font-family: 'Archivo-Medium', sans-serif;
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+}
+
+main .home .landing-page p img{
+    width: 14px;
+    margin-right: 5px;
+}
+
+main .home .landing-page h3{
+    font-family: 'Archivo-Regular', sans-serif;
+    font-size: 1rem;
+    margin:30px 0;
+    padding: 0;
+}
+
+@media (min-width: 769px){
+    main .home{
+        margin-top: 90px;
+    }
+
+    main .home .landing-page h1{
+        font-size: 3.5rem;
+    }
+
+    main .home .landing-page p{
+        font-family: 'Archivo-Regular', sans-serif;
+        font-size: 1.1rem;
+    }
+
+    main .home .landing-page h3{
+        font-size: 1.5rem;
+    }
 }
 
 /* ABOUT */
 
-main {
-    background-color: #211D1A;
-    color: #F4F4F4;
-}
-
 main .about{
-    padding: 2rem 1.5rem;
+    background-color: #1A1F21;
+    color: #F4F4F4;
+    margin: 0;
+    padding: 0;
 }
 
-main .about img{
-    width: 10rem;
-    border-radius: 50%;
-    display: block;
-    margin: auto;
-}
-
-main .about h2{
-    font-family: 'Archivo-SemiBold', sans-serif;
-    font-size: 1.875rem;
+main .about .about-page{
+    margin: 0 1.25rem;
     text-align: center;
 }
 
-main .about p{
+main .about .about-page img{
+    border-radius: 50%;
+    width: 150px;
+    margin-top: 30px;
+}
+
+main .about .about-page h2{
+    font-family: 'ClashGrotesk-Medium', sans-serif;
+    font-size: 1.3rem;
+    margin: 20px 0;
+    padding: 0;
+}
+
+main .about .about-page p{
+    font-family: 'Archivo-ExtraLight', sans-serif;
     font-size: 0.9rem;
+    text-align: left;
+    margin: 0;
+    padding: 0;
 }

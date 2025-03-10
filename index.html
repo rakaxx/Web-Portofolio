@@ -11,30 +11,43 @@
 <body>
     <header>
         <nav>
-            <div class="navbar-mobile">
-                <div class="navbar">
-                    <h4>Edelweis</h4>
-                    <img src="src/icons/menu.png" alt="burger-menu">
-                </div>
+            <h4>Edelweis</h4>
+            <div id="burger-menu" class="burger-menu">
+                <img src="src/icons/menu.png" alt="burger-menu">
             </div>
+            <ul id="menu-list" class="hidden">
+                <a class="current" href="#"><li>Home</li></a>
+                <a href="#"><li>Portofolio</li></a>
+                <a href="#"><li>Contact</li></a>
+                <a class="mobile-cv" href=""><li>CV</li></a>
+            </ul>
+            <a class="cv" href="#"><img src="src/icons/cv.png" alt="cv">CV</a>
         </nav>
-        <section class="welcome">
-            <h1>WELCOME<br>TO MY WEBSITE</h1>
-            <p><img src="src/icons/maps.png">Cianjur, Indonesia</p>
-            <h3>“Where Creativity Meets Code”</h3>
-        </section>
     </header>
 
     <main>
-        <section class="about">
-            <img src="src/img/hero.png" alt="hero">
-            <h2>ABOUT ME</h2>
-            <p>Hi, I'm Raka Ikbar Setyadireza, a fresh graduate in Informatics Engineering from Indonesia, class of 2024. I have a strong passion for designing and developing websites, transforming creative ideas into functional digital experiences.<br><br>Beyond web design, I enjoy working on graphic design projects, including logos, posters, and other visual content. My passion extends to game design, where I have created and developed 2D games, blending creativity with technical implementation.</p>
+        <section id="home" class="home">
+            <div class="landing-page">
+                <h1>WELCOME<br>TO MY WEBSITE</h1>
+                <p><img src="src/icons/maps.png" alt="map-icon">Cianjur, Indonesia</p>
+                <h3>"Where Creativity Meets Code"</h3>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="about-page">
+                <img src="src/img/hero3.JPG" alt="hero.jpg">
+                <h2>ABOUT ME</h2>
+                <p>Hi, I'm Raka Ikbar Setyadireza, a fresh graduate in Informatics Engineering from Indonesia, class of 2024. I have a strong passion for designing and developing websites, transforming creative ideas into functional digital experiences.
+                    <br><br>Beyond web design, I enjoy working on graphic design projects, including logos, posters, and other visual content. My passion extends to game design, where I have created and developed 2D games, blending creativity with technical implementation.
+                </p>
+            </div>
         </section>
     </main>
 
     <footer>
 
     </footer>
+
+    <script src="src/script.js"></script>
 </body>
 </html>
