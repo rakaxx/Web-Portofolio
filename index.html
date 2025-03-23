@@ -11,271 +11,73 @@
 <body>
     <header>
         <nav>
-            <h4>Edelweis</h4>
-            <div id="burger-menu" class="burger-menu">
-                <img src="src/icons/menu.png" alt="burger-menu">
-            </div>
-            <ul id="menu-list" class="hidden">
-                <a class="current" href="#"><li>Home</li></a>
-                <a href="#"><li>Portofolio</li></a>
-                <a href="#"><li>Contact</li></a>
-                <a class="mobile-cv" href=""><li>CV</li></a>
-            </ul>
-            <a class="cv" href="#"><img src="src/icons/cv.png" alt="cv">CV</a>
+           <div class="nav-mobile">
+                <h3>EDELWEIS</h3>
+                <img src="src/icons/menu.png">
+           </div>
+           <div class="nav-desktop">
+                <h3>EDELWEIS</h3>
+                <ul>
+                    <li class="cv"><button><img src="src/icons/cv.png"></button></li>
+                    <li class="get-touch"><button>GET IN TOUCH</button></li>
+                    <li class="menu"><button>MENU</button></li>
+                </ul>
+           </div>
+       </div>
         </nav>
     </header>
 
     <main>
         <section id="home" class="home">
-            <div class="landing-page">
-                <h1>WELCOME<br>TO MY WEBSITE</h1>
-                <p><img src="src/icons/maps.png" alt="map-icon">Cianjur, Indonesia</p>
-                <h3>"Where Creativity Meets Code"</h3>
+            <div class="top-text">
+                <p class="left">Seen by 500+ people</p>
+                <div class="icons">
+                    <div class="rows">
+                        <img src="src/icons/html.png">
+                        <label>HTML</label>
+                    </div>
+                    <div class="rows">
+                        <img src="src/icons/css.png">
+                        <label>CSS</label>
+                    </div>
+                    <div class="rows-hidden">
+                        <img src="src/icons/java-script.png">
+                        <label>Javascript</label>
+                    </div>
+                    <div class="rows-hidden">
+                        <img src="src/icons/laravel.png">
+                        <label>Laravel</label>
+                    </div>
+                </div>
+                <p class="right">5+ more</p>
+            </div>
+            <div class="title">
+                <h1>WHEN CREATIVITY MEETS CODE</h1>
+            </div>
+            <div class="sub-title">
+                <p>Help you build a website with a clean and modern design</p>
+            </div>
+            <div class="button">
+                <button>SEE MY WORKS</button>
             </div>
         </section>
         <section id="about" class="about">
-            <div class="about-page">
-                <div class="image">
-                    <img src="src/img/hero3.jpg" alt="hero.jpg">
-                    <h1>ABOUT</h1>
-                </div>
-                <div class="content">
-                    <input type="checkbox" id="ch">
-                    <h2>ABOUT ME</h2>
-                    <p>Hi, I'm Raka Ikbar Setyadireza, a fresh graduate in Informatics Engineering from Indonesia, class of 2024. I have a strong passion for designing and developing websites, transforming creative ideas into functional digital experiences.
-                    <br><br>Beyond web design, I enjoy working on graphic design projects, including logos, posters, and other visual content. My passion extends to game design, where I have created and developed 2D games, blending creativity with technical implementation.
-                </p>
-                    <div class="hidden-content">
-                        <p><br>Additionally, I have a keen interest in Quality Assurance (QA), ensuring that digital products meet high standards of functionality, usability, and performance. My multidisciplinary approach allows me to bridge the gap between design, development, and quality.
-                            <br><br>I'm always eager to learn and explore new technologies to enhance my skills and create impactful digital experiences
-                        </p>
-                        <label for="ch">Show Less</label>
-                    </div>
-                    <label for="ch">Read More</label>
-                </div>
-            </div>
+           
         </section>
         <section id="portofolio" class="portofolio">
-            <div class="portofolio-page">
-                <h2>PORTOFOLIO</h2>
-                <h5>Completed Projects</h5>
-                <div class="rows">
-                    <div class="portofolio-box">
-                        <div>
-                            <div class="portofolio-image">
-                                <img src="src/portofolio-img/e-agenda.png">
-                            </div>
-                            <div class="portofolio-content">
-                                <div>
-                                    <label class="title">E-Agenda</label>
-                                    <label class="tags">
-                                        <ul>
-                                            <li><img src="src/icons/html.png">HTML</li>
-                                            <li><img src="src/icons/css.png">CSS</li>
-                                            <li><img src="src/icons/java-script.png">JavaScript</li>
-                                            <li><img src="src/icons/php.png">PHP</li>
-                                            <li><img src="src/icons/laravel.png">Laravel</li>
-                                        </ul>
-                                    </label>
-                                    <p>A website for vocational high school teachers to create, edit, delete, and manage their teaching agenda or schedules or lesson plans.</p>
-                                </div>
-                                <input type="button" value="Read More">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="rows">
-                    <div class="portofolio-box">
-                        <div>
-                            <div class="portofolio-image">
-                                <img src="src/portofolio-img/evabs.png">
-                            </div>
-                            <div class="portofolio-content">
-                                <div>
-                                    <label class="title">Evabs</label>
-                                    <label class="tags">
-                                        <ul>
-                                            <li><img src="src/icons/csharp-small.png">C#</li>
-                                            <li><img src="src/icons/unity.png">Unity</li>
-                                            <li><img src="src/icons/2d.png">2D</li>
-                                        </ul>
-                                    </label>
-                                    <p>This game is an education game for students grade 4th to improving their english skills by increasing the vocabulary with playing this game.</p>
-                                </div>
-                                <input type="button" value="Read More">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </section>
-        <section class="skill">
-            <div class="skill-page">
-                <h2>WHAT I WORK WITH</h2>
-                <div class="grid-container">
-                    <div class="grid-item">
-                        <div class="skill-mobile">
-                            <img src="src/icons/html.png">
-                            <span>HTML<p>"Structured, semantic, and essential."</p></span>
-                        </div>
-                        <div class="skill-desktop">
-                            <div>
-                                <img src="src/icons/html.png">
-                                <span>HTML</span>
-                            </div>
-                            <p>"Structured, semantic, and essential."</p>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="skill-mobile">
-                            <img src="src/icons/css.png">
-                            <span>CSS<p>"Pixel-perfect styling, responsive by default."</p></span>
-                        </div>
-                        <div class="skill-desktop">
-                            <div>
-                                <img src="src/icons/css.png">
-                                <span>CSS</span>
-                            </div>
-                            <p>"Pixel-perfect styling, responsive by default."</p>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="skill-mobile">
-                            <img src="src/icons/java-script.png">
-                            <span>JavaScript<p>"Interactivity that powers the web."</p></span>
-                        </div>
-                        <div class="skill-desktop">
-                            <div>
-                                <img src="src/icons/java-script.png">
-                                <span>JavaScript</span>
-                            </div>
-                            <p>"Interactivity that powers the web."</p>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="skill-mobile">
-                            <img src="src/icons/tailwind.png">
-                            <span>Tailwind<p>"Utility-first, fast, and flexible."</p></span>
-                        </div>
-                        <div class="skill-desktop">
-                            <div>
-                                <img src="src/icons/tailwind.png">
-                                <span>Tailwind</span>
-                            </div>
-                            <p>"Utility-first, fast, and flexible."</p>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="skill-mobile">
-                            <img src="src/icons/csharp-big.png">
-                            <span>C#<p>"Powerful, versatile, and scalable."</p></span>
-                        </div>
-                        <div class="skill-desktop">
-                            <div>
-                                <img src="src/icons/csharp-big.png">
-                                <span>C#</span>
-                            </div>
-                            <p>"Powerful, versatile, and scalable."</p>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="skill-mobile">
-                            <img src="src/icons/unity.png">
-                            <span>Unity<p>"Create, iterate, and innovate in 3D & 2D."</p></span>
-                        </div>
-                        <div class="skill-desktop">
-                            <div>
-                                <img src="src/icons/unity.png">
-                                <span>Unity</span>
-                            </div>
-                            <p>"Create, iterate, and innovate in 3D & 2D."</p>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="skill-mobile">
-                            <img src="src/icons/laravel.png">
-                            <span>Laravel<p>"Elegant, scalable, and developer-friendly."</p></span>
-                        </div>
-                        <div class="skill-desktop">
-                            <div>
-                                <img src="src/icons/laravel.png">
-                                <span>Laravel</span>
-                            </div>
-                            <p>"Elegant, scalable, and developer-friendly."</p>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="skill-mobile">
-                            <img src="src/icons/figma.png">
-                            <span>Figma<p>"Design, prototype, collaborate."</p></span>
-                        </div>
-                        <div class="skill-desktop">
-                            <div>
-                                <img src="src/icons/figma.png">
-                                <span>Figma</span>
-                            </div>
-                            <p>"Design, prototype, collaborate."</p>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="skill-mobile">
-                            <img src="src/icons/adobeillustrator.png">
-                            <span>Adobe Illustrator<p>"Scalable design, limitless creativity."</p></span>
-                        </div>
-                        <div class="skill-desktop">
-                            <div>
-                                <img src="src/icons/adobeillustrator.png">
-                                <span>Adobe Illustrator</span>
-                            </div>
-                            <p>"Scalable design, limitless creativity."</p>
-                        </div>
-                    </div>
-                </div>                              
-            </div>
+        <section  id="portofolio" class="skill">
+           
         </section>
-        <section class="experience">
-            <div class="experience-page">
-                <h2>EXPERIENCE</h2>
-                <h5>My Career Timeline</h5>
-                <div class="rows">
-                    <p>No Experience Yet</p>
-                </div>
-            </div>
+        <section  id="portofolio" class="experience">
+           
         </section>
-        <section class="type">
-            <div class="type-page">
-                <div class="rows">
-                    <div class="up-type1">
-                        <h1>DERN</h1>
-                    </div>
-                    <div class="up-type2">
-                        <h1>...</h1>
-                    </div>
-                </div>
-                <div class="rows">
-                    <div class="empty"></div>
-                    <div class="mid-type">
-                        <h2>MINIMALISTIC</h2>
-                        <h2>MODERN</h2>
-                        <h2>CLEAN</h2>
-                        <h2>FRIENDLY</h2>
-                    </div>
-                    <div class="empty"></div>
-                </div>
-                <div class="rows">
-                    <div class="bot-type1">
-                        <h1>...</h1>
-                    </div>
-                    <div class="bot-type2">
-                        <h1>ISTIC</h1>
-                    </div>
-                </div>
-            </div>
+        <section  id="portofolio" class="type">
+           
         </section>
-        <section class="contact">
-            <div class="class-contact">
-
-            </div>
+        <section  id="portofolio" class="contact">
+            
         </section>
     </main>
 

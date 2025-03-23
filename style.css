@@ -3,805 +3,289 @@
 }
 
 body{
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    line-height: 1.5;
-    letter-spacing: 0.5px;
-    font-family: 'Archivo-ExtraLight', sans-serif;
     margin: 0;
+    padding: 0;
+    background-color: #EEEFF8;
 }
 
 /* NAVBAR */
-header{
-    color: #1A1F21;
-}
 
-header nav{
+.nav-mobile{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+    padding: 0 2vh;
+    background-color: #EEEFF8;
+    color: #171717;
+    height: 6vh;
 }
 
-header nav h4{
-    margin: 1rem 1.25rem;    
-    font-family: 'ClashGrotesk-Semibold', sans-serif;
-    font-size: 1.2rem;
-}
-
-header nav ul{
-    display: flex;
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-header nav ul a{
-    text-decoration: none;
-    padding: 0.75rem 0;
-}
-
-header nav ul a li{
-    color: #1A1F21;
-    font-size: 0.75rem;
-    font-weight: 700;
-}
-
-header nav ul a:hover li{
-    font-size: 1rem;
-    font-family: 'Archivo-Regular', sans-serif;
-}
-
-header nav .burger-menu{
-    display: flex;
-    align-items: center; /* Vertically centering the image syaratnya displaynya harus flex */
-}
-
-header nav .burger-menu img{
+.nav-desktop{
     display: none;
-    margin: 1rem 1.25rem;  
-
 }
 
-@media (max-width: 768px){
-
-    header nav{
-        flex-wrap: wrap;
-    }
-
-    header nav ul{
-        flex-direction: column;
-        width: 100%;
-        margin: 0;
-
-    }
-
-    header nav ul.hidden{ /* hidden class penulisannya memang harus gini*/
-        display: none;
-    }
-
-    header nav a.cv{ /* hidden class penulisannya memang harus gini*/
-        display: none;
-    }
-    
-    header nav .burger-menu img{
-        display: flex;
-        width: 30px;
-        height: 30px;
-    }
+.nav-mobile h3{
+    font-family: 'ClashGrotesk-Regular', sans-serif;
+    font-size: 3vh;
 }
 
-@media (min-width: 769px){
-    header nav h4{
-        display: flex;
-        align-items: center;
-        font-family: 'Archivo-Light', sans-serif;
-        font-size: 1.1rem;
-        margin: 1rem 2rem; 
-    }
-
-    header nav ul{
-        margin: auto;
-        border-radius: 999px;
-        background: linear-gradient(60deg, #d7eaf5 70%, #D6E4ED66 100%); /* 66 itu 40% opacity  nya */
-        box-shadow: 3px 4px 7px 0px rgba(0, 0, 0, 0.1);
-    }
-    
-    header nav ul a{  
-        padding: 7px 30px;
-        margin: 0;
-        border-radius: 999px;
-    }
-    
-    header nav ul a li{
-        font-family: 'Archivo-Thin', sans-serif;
-        font-size: 1rem;
-    }
-
-    header nav ul a.mobile-cv{
-        display: none;
-    }
-
-    header nav ul a.current, header nav ul a:hover{
-        background: linear-gradient(60deg, #489FC366, #489FC3); /* 66 itu 40% opacity  nya */
-    }
-
-    header nav ul a.current li, header nav ul a:hover li{
-        font-family: 'Archivo-Bold', sans-serif;
-        color: white; 
-    }
-
-    header nav a.cv{
-        font-family: 'ClashGrotesk-Medium', sans-serif;
-        text-decoration: none;
-        color: #1A1F21;
-        border: #1A1F21 1px solid;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        margin: 1rem 1.25rem;
-        padding: 7px 16px;   
-        font-size: 1rem; 
-        margin: 1rem 2rem; 
-    }
-
-    header nav a.cv img{
-        width: 22px;
-        margin-right: 5px;
-    }
+.nav-mobile img{
+    width: 4vh;
 }
 
 /* HOME */
-main .home{
-    color: #1A1F21;
-    margin-top: 110px;
-    height: calc(100vh - 148px);
+
+.home{
+    margin-top: 20vh;
+    padding: 0 2vh;
+    color: #171717;
 }
 
-main .home .landing-page{
-    text-align: center;
-}
-
-main .home .landing-page h1{
-    font-family: 'ClashGrotesk-Bold', sans-serif;
-    font-size: 1.8rem;
-    margin: 10px 0;
-    padding: 0;
-}
-
-main .home .landing-page p{
-    font-family: 'Archivo-Medium', sans-serif;
-    font-size: 0.9rem;
+.home .top-text p{
     margin: 0;
-    padding: 0;
-}
-
-main .home .landing-page p img{
-    width: 14px;
-    margin-right: 5px;
-}
-
-main .home .landing-page h3{
     font-family: 'Archivo-Regular', sans-serif;
-    font-size: 1rem;
-    margin:30px 0;
-    padding: 0;
+    font-size: 1.8vh;
 }
 
-@media (min-width: 769px){
-    main .home{
-        margin-top: 90px;
-    }
-
-    main .home .landing-page h1{
-        font-size: 3.5rem;
-    }
-
-    main .home .landing-page p{
-        font-family: 'Archivo-Regular', sans-serif;
-        font-size: 1.1rem;
-    }
-
-    main .home .landing-page h3{
-        font-size: 1.5rem;
-    }
-}
-
-/* ABOUT */
-
-main .about{
-    background-color: #211D1A;
-    color: #F4F4F4;
-    margin: 0;
-    padding: 0;
-}
-
-main .about .about-page{
-    margin: 0 1.25rem;
-    text-align: center;
-}
-
-main .about .about-page img{
-    border-radius: 50%;
-    width: 150px;
-    margin-top: 30px;
-}
-
-main .about .about-page h1{
+.home .top-text .icons{
     display: none;
 }
 
-main .about .about-page h2{
-    font-family: 'ClashGrotesk-Medium', sans-serif;
-    font-size: 1.3rem;
-    margin: 20px 0;
-    padding: 0;
-}
-
-main .about .about-page p{
-    font-family: 'Archivo-ExtraLight', sans-serif;
-    font-size: 0.9rem;
-    text-align: left;
+.home .title h1{
     margin: 0;
-    padding: 0;
+    padding: 2vh 0;
+    font-family: 'ClashGrotesk-Bold', sans-serif;
+    font-size: 7vh;
 }
 
-main .about .about-page label{
-    display: inline-block;
-    background: linear-gradient(-60deg, #4E7380, #489FC3);
+.home .sub-title p{
+    margin: 0;
     font-family: 'Archivo-Light', sans-serif;
-    font-size: 0.9rem;
-    padding: 0.4rem 1rem;
-    border-radius: 999px;
-    margin: 1.5rem 0;
+    font-size: 2.4vh;
 }
 
-main .about .about-page #ch{
-    display: none;
-}
-
-main .about .about-page #ch:checked ~ .hidden-content{
-    display: block;
-}
-
-main .about .about-page #ch:checked ~ label{
-    display: none;
-}
-
-main .about .about-page .hidden-content{
-    display: none;
-}
-
-@media (min-width: 769px){
-    main .about .about-page{
-        display: flex;
-        padding-top: 2.8rem;
-        padding-bottom: 4.7rem;
-        height: 100vh;
-    }
-
-    main .about .about-page .image {
-        display: flex;
-        justify-content: center;
-        position: relative; 
-        margin-left: 1rem;
-    }
-    
-    main .about .about-page .image img {
-        text-align: right;
-        position: relative;
-        width: 200px;
-        height: 200px;
-        margin-left: 0.3rem;
-        z-index: 2;
-    }
-    
-    main .about .about-page .image h1 {
-        display: block;
-        font-family: 'ClashGrotesk-Medium', sans-serif;
-        font-size: 4.2rem;
-        color: #211D1A;
-        writing-mode: vertical-lr;
-        position: absolute; 
-        z-index: 1;
-        top: 99%;
-        transform: translateY(-100%);
-        text-shadow: 
-        -1px -1px 0 #F4F4F4,  
-         1px -1px 0 #F4F4F4,
-        -1px  1px 0 #F4F4F4,
-         1px  1px 0 #F4F4F4;
-         opacity: 50%;
-    }
-
-    main .about .about-page .content{
-        margin-left: 2.7rem;
-        margin-right: 1rem;
-    }
-
-    main .about .about-page h2{
-        font-family: 'ClashGrotesk-SemiBold', sans-serif;
-        font-size: 1.6rem;
-        text-align: left;
-    }
-
-    main .about .about-page p{
-        font-family: 'Archivo-ExtraLight', sans-serif;
-        font-size: 0.85rem;
-    }
-
-    main .about .about-page .hidden-content{
-        display: block;
-    }
-
-    main .about .about-page label{
-        display: none;
-    }
-}
-
-/* POTOFOLIO */
-main .portofolio{
-    margin: 0;
-    padding: 0;
-}
-
-main .portofolio .portofolio-page{
-    margin: 2rem 1.25rem;
-}
-
-main .portofolio .portofolio-page .rows{
-    margin-top: 2rem;
-}
-
-main .portofolio .portofolio-page h2{
-    font-family: 'ClashGrotesk-Medium', sans-serif;
-    font-size: 1.3rem;
-    margin: 0;
-    padding: 0;
-}
-
-main .portofolio .portofolio-page h5{
-    font-family: 'ClashGrotesk-Light', sans-serif;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 2rem;
-}
-
-main .portofolio .portofolio-page .portofolio-box{
-    background-color: #211D1A;
-    color: #F4F4F4;
-    border-radius: 10px;
-}
-
-main .portofolio .portofolio-page .portofolio-box .portofolio-image{
-    text-align: center;
-}
-
-main .portofolio .portofolio-page .portofolio-box img{
-    width: 95%;
-    border-radius: 6px;
-    margin: 0.35rem 0 ;
-}
-
-main .portofolio .portofolio-page .portofolio-box .portofolio-content{
-    margin: 0 1.1rem;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-main .portofolio .portofolio-page .portofolio-box .portofolio-content .title{
-    font-family: 'Archivo-Medium', sans-serif;
-    font-size: 1.1rem;
-}
-
-main .portofolio .portofolio-page .portofolio-box .portofolio-content .tags{
+.home .button button{
+    margin-top: 7vh;
     font-family: 'ClashGrotesk-Regular', sans-serif;
-    font-size: 0.6rem;
-    text-decoration: none;
-    list-style: none;
+    background-color: #2D2D39;
+    color: #EEEFF8;
+    padding: 1.5vh 3vh;
+    border: none;
+    border-radius: 100vh;
+    font-size: 2vh;
 }
 
-main .portofolio .portofolio-page .portofolio-box .portofolio-content ul{
-    display: flex;
-    flex-wrap: wrap;
-    text-decoration: none;
-    list-style: none;
-    margin: 0.3rem 0;
-    padding: 0;
-    gap: 5px;
-}
-
-main .portofolio .portofolio-page .portofolio-box .portofolio-content ul li{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0;
-    padding: 0 0.4rem;
-    gap: 5px;
-    border: 1px solid rgba(244, 244, 244, 0.2);
-}
-
-main .portofolio .portofolio-page .portofolio-box .portofolio-content ul li img{
-    filter: invert(79%) sepia(0%) saturate(2%) hue-rotate(81deg) brightness(97%) contrast(88%);
-    width: 1rem;
-    height: auto;
+@media (min-width: 768px){
+    /* NAVBAR */
     
-}
-
-main .portofolio .portofolio-page .portofolio-box .portofolio-content p{
-    font-family: 'Archivo-Thin', sans-serif;
-    font-size: 0.8rem;
-    margin-bottom: 1rem;
-}
-
-main .portofolio .portofolio-page .portofolio-box input{
-    font-family: 'Archivo-Light', sans-serif;
-    background: linear-gradient(-60deg, #4E7380, #489FC3);
-    border-radius: 999px;
-    border: transparent;
-    color: #F4F4F4;
-    padding: 0.2rem 1rem;
-    margin: 0 1rem;
-    margin-bottom: 1rem;
-}
-
-@media (min-width: 769px){
-    main .portofolio .portofolio-page{
-        margin: 3rem 4rem;
+    .nav-mobile{
+        height: 8vh;
+    }
+    
+    .nav-mobile h3{
+        font-size: 3.5vh;
+    }
+    
+    .nav-mobile img{
+        width: 5vh;
     }
 
-    main .portofolio .portofolio-page .rows{
-        margin-top: 2rem;
+    /* HOME */
+
+    .home{
+        margin-top: 18vh;
     }
 
-    main .portofolio .portofolio-page .portofolio-box div{
+    .home .top-text{
         display: flex;
-        flex-direction: row-reverse;
     }
 
-    main .portofolio .portofolio-page .portofolio-box{
-        max-width: 769px;
-        margin: auto;
+    .home .top-text .left{
+        margin-right: 2vh;
+        font-size: 2.1vh;
     }
 
-    main .portofolio .portofolio-page .portofolio-box .portofolio-image{
-        position: relative;
-        text-align: center;
+    .home .top-text .right{
+        margin-left: 2vh;
+        font-size: 2.1vh;
     }
 
-    main .portofolio .portofolio-page .portofolio-box .portofolio-image img{
-        width: 100%;
-        border-radius: 6px;
-        margin: 1.3rem; 
-    }
-    
-    main .portofolio .portofolio-page h2{
-        font-family: 'ClashGrotesk-SemiBold', sans-serif;
-        font-size: 1.6rem;
-    }
-
-    main .portofolio .portofolio-page h5{
-        font-family: 'ClashGrotesk-Light', sans-serif;
-        font-size: 0.9rem;
-        margin-bottom: 3rem;
-    }
-
-    main .portofolio .portofolio-page .portofolio-box .portofolio-content{
-       margin-left: 2rem;
-       display: flex;
-       justify-content: space-between;
-    }
-
-    main .portofolio .portofolio-page .portofolio-box .portofolio-content div{
+    .home .top-text .icons{
         display: flex;
-        flex-direction: column;
-     }
-
-    main .portofolio .portofolio-page .portofolio-box .portofolio-content .title{
-        font-family: 'Archivo-Regular', sans-serif;
-        font-size: 1.1rem;
-        margin-top: 1.5rem;
-    }
-    
-    main .portofolio .portofolio-page .portofolio-box .portofolio-content .tags{
-        font-family: 'ClashGrotesk-Regular', sans-serif;
-        font-size: 0.6rem;
-        text-decoration: none;
-        list-style: none;
-        margin-right: 1rem;
     }
 
-    main .portofolio .portofolio-page .portofolio-box .portofolio-content p{
-        margin-right: 1rem;
-    }
-    
-
-    main .portofolio .portofolio-page .portofolio-box .portofolio-content input{
-        margin: 1rem 0;
-        margin-bottom: 1.5rem;
-        width: auto;
-        max-width: 8rem;
-    }
-    
-}
-
-/* SKILL */
-
-main .skill{
-    margin: 0;
-    padding: 0;
-    background-color: #211D1A;
-    color: #F4F4F4;
-}
-
-main .skill .skill-page{
-    margin: 2rem 1.25rem;
-}
-
-main .skill .skill-page h2{
-    font-family: 'ClashGrotesk-Medium', sans-serif;
-    font-size: 1.3rem;
-    margin: 0;
-    padding: 2.2rem 0;
-    text-align: center;
-}
-
-main .skill .grid-container .grid-item .skill-mobile{
-    display: flex;
-    align-items: center;
-}
-
-main .skill .grid-container .grid-item .skill-desktop{
-    display: none;
-}
-
-main .skill .grid-container .grid-item .skill-mobile img{
-    width: 2.2rem;
-    filter: invert(79%) sepia(0%) saturate(2%) hue-rotate(81deg) brightness(97%) contrast(88%);
-}
-
-main .skill .grid-container .grid-item .skill-mobile span{
-    font-family: 'ClashGrotesk-Medium', sans-serif;
-    margin-left: 1.5rem;
-    padding: 1rem 0;
-}
-
-main .skill .grid-container .grid-item .skill-mobile span p{
-    font-family: 'Archivo-Thin', sans-serif;
-    margin: 0.2rem 0;
-    font-size: 0.85rem;
-}
-
-
-@media (min-width: 769px){
-    main .skill .skill-page h2{
-        font-family: 'ClashGrotesk-SemiBold', sans-serif;
-        font-size: 1.6rem;
-    }
-    
-    main .skill .grid-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-        justify-content: center;
-        padding: 20px;
-    }
-
-    main .skill .grid-container .grid-item {
-        background-color: #292725;
-        padding: 2rem;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    }
-
-    main .skill .grid-container .grid-item .skill-mobile{
-        display: none;
-    }
-
-    main .skill .grid-container .grid-item .skill-desktop{
-        display: block;
-    }
-
-    main .skill .grid-container .grid-item .skill-desktop div{
+    .home .top-text .rows{
         display: flex;
         align-items: center;
-        text-align: center;
+        padding: 0 1vh;
     }
 
-    main .skill .grid-container .grid-item .skill-desktop div span{
-        margin-left: 0.5rem;
+    .home .top-text .rows-hidden{
+        display: none;
     }
 
-    main .skill .grid-container .grid-item .skill-desktop div img{
-        width: 1.5rem;
-        filter: invert(79%) sepia(0%) saturate(2%) hue-rotate(81deg) brightness(97%) contrast(88%);
-    }
-}
-
-/* EXPERIENCE */
-
-main .experience{
-    margin: 0;
-    padding: 0;
-}
-
-main .experience .experience-page{
-    margin: 2rem 1.25rem;
-}
-
-main .experience .experience-page .rows{
-    margin-top: 2rem;
-}
-
-main .experience .experience-page h2{
-    font-family: 'ClashGrotesk-Medium', sans-serif;
-    font-size: 1.3rem;
-    margin: 0;
-    padding: 0;
-}
-
-main .experience .experience-page h5{
-    font-family: 'ClashGrotesk-Light', sans-serif;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 2rem;
-}
-
-main .experience .experience-page .rows p{
-    text-align: center;
-    padding: 12rem 0;
-    opacity: 50%;
-}
-
-@media (min-width: 769px){
-    main .experience .experience-page h2{
-        font-family: 'ClashGrotesk-SemiBold', sans-serif;
-        font-size: 1.6rem;
+    .home .top-text .rows img{
+        width: 3vh;
     }
 
-    main .experience .experience-page h5{
-        font-family: 'ClashGrotesk-Light', sans-serif;
-        font-size: 0.9rem;
-        margin-bottom: 3rem;
+    .home .top-text .rows label{
+        font-family: 'ClashGrotesk-Medium', sans-serif;
+        font-size: 2.5vh;
+        margin-left: 1vh;
     }
 
-    main .experience .experience-page{
-        margin: 3rem 4rem;
+    .home .title h1{
+        font-size: 10vh;
     }
 
-    main .experience .experience-page .rows{
-        margin-top: 2rem;
+    .home .sub-title p{
+        font-size: 3vh;
+    }
+
+    .home .button button{
+        padding: 2vh 3.5vh;
+        font-size: 2.5vh;
     }
 }
 
-/* TYPE */
-
-.type{
-    background-color: #211D1A;
-    color: #F4F4F4;
-}
-
-.type .type-page{
-    margin: 2rem 1.25rem;
-}
-
-.type .type-page .rows{
-    display: flex;
-    justify-content: space-between;
-    position: relative; /* Pastikan parent-nya relative */
-    overflow: visible;
-}
-
-.type .type-page .rows .up-type1{
-    font-family: 'ClashGrotesk-Medium', sans-serif;
-    font-size: 2.2rem;
-    color: #211D1A;
-    writing-mode: vertical-lr;
-    text-shadow: 
-        -1px -1px 0 #F4F4F4,  
-         1px -1px 0 #F4F4F4,
-        -1px  1px 0 #F4F4F4,
-         1px  1px 0 #F4F4F4;
-    opacity: 50%;
-    line-height: 0;
-}
-
-.type .type-page .rows .up-type2{
-    font-family: 'ClashGrotesk-Medium', sans-serif;
-    font-size: 2.2rem;
-    color: #211D1A;
-    text-shadow: 
-        -1px -1px 0 #F4F4F4,  
-         1px -1px 0 #F4F4F4,
-        -1px  1px 0 #F4F4F4,
-         1px  1px 0 #F4F4F4;
-    opacity: 50%;
-    line-height: 0;
-    letter-spacing: 1rem;
-}
-
-.type .type-page .rows .empty{
-    width: 100%;
-}
-
-.type .type-page .rows .mid-type{
-    font-family: 'ClashGrotesk-Medium', sans-serif;
-    width: 100%;
-    padding: 2rem 0;
-    font-size: 1.2rem;
-    line-height: 1;
-}
-
-.type .type-page .rows .bot-type1{
-    font-family: 'ClashGrotesk-Medium', sans-serif;
-    font-size: 2.2rem;
-    color: #211D1A;
-    text-shadow: 
-        -1px -1px 0 #F4F4F4,  
-         1px -1px 0 #F4F4F4,
-        -1px  1px 0 #F4F4F4,
-         1px  1px 0 #F4F4F4;
-    opacity: 50%;
-    line-height: 0;
-    letter-spacing: 1rem;
-}
-
-.type .type-page .rows .bot-type2{
-    font-family: 'ClashGrotesk-Medium', sans-serif;
-    font-size: 2.2rem;
-    color: #211D1A;
-    writing-mode: sideways-lr;
-    text-shadow: 
-        -1px -1px 0 #F4F4F4,  
-         1px -1px 0 #F4F4F4,
-        -1px  1px 0 #F4F4F4,
-         1px  1px 0 #F4F4F4;
-    opacity: 50%;
-    line-height: 0;
-}
-
-@media (min-width: 769px){
-    .type .type-page .rows .up-type1,
-    .type .type-page .rows .up-type2,
-    .type .type-page .rows .bot-type1,
-    .type .type-page .rows .bot-type2{
-        font-size: 3rem;
+@media (min-width: 1024px) and (orientation: landscape){
+    /* NAVBAR */
+    
+    .nav-mobile{
+        display: none;
     }
 
-    .type .type-page .rows .mid-type{
-        font-size: 2rem;
-        line-height: 1.5rem;
+    .nav-desktop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        z-index: 99;
+        top: 0;
+        padding: 7vh;
+        background-color: #EEEFF8;
+        color: #171717;
+        height: 6vh;
+    }
+    
+    .nav-desktop h3{
+        font-family: 'ClashGrotesk-Regular', sans-serif;
+        font-size: 4vh;
+        letter-spacing: 1px;
+    }
+
+    .nav-desktop ul{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+
+    .nav-desktop ul li{
+        text-decoration: none;
+        margin: 0 0.7vh;
+    }
+
+    .nav-desktop button{
+        border-radius: 100px;
+        padding: 1.8vh 4vh;
+        font-family: 'ClashGrotesk-Regular';
+        font-size: 2.5vh;
+        letter-spacing: 1px;
+    }
+    
+    .nav-desktop .cv img{
+        width: 3.5vh;
+        margin: 0 2vh;
+    }
+
+    .nav-desktop .cv button{
+        padding: 1vh;
+        border: none;
+        background-color: #EEEFF8;
+    }
+
+    .nav-desktop .get-touch button{
+        border: none;
+        background-color: #2D2D39;
+        color: #EEEFF8;
+    }
+
+    .nav-desktop .menu button{
+        border: none;
+        background-color: #EEEFF8;
+    }
+
+    /* HOME */
+
+    .home{
+        padding: 0 16vh;
+        margin-top: 21vh;
+    }
+
+    .home .top-text{
+        display: flex;
+        align-items: center;
+    }
+
+    .home .top-text .left{
+        margin-right: 3vh;
+        font-size: 2.5vh;
+    }
+
+    .home .top-text .right{
+        margin-left: 3.5vh;
+        font-size: 2.5vh;
+    }
+
+    .home .top-text .icons{
+        display: flex;
+    }
+
+    .home .top-text .rows,
+    .home .top-text .rows-hidden{
+        display: flex;
+        align-items: center;
+        padding: 0 2vh;
+    }
+
+    .home .top-text .rows img,
+    .home .top-text .rows-hidden img{
+        width: 3vh;
+    }
+
+    .home .top-text .rows label,
+    .home .top-text .rows-hidden label{
+        font-family: 'ClashGrotesk-Medium', sans-serif;
+        font-size: 3.5vh;
+        margin-left: 1vh;
+    }
+
+    .home .title h1{
+        font-family: 'ClashGrotesk-Medium', sans-serif;
+        font-size: 15vh;
+        padding: 3vh 0;
+        letter-spacing: 3px;
+    }
+
+    .home .sub-title p{
+        font-size: 3.5vh;
+    }
+
+    .home .button button{
+        padding: 2vh 3.5vh;
+        font-size: 2.5vh;
+        letter-spacing: 1px;
     }
 }
 
+@media (min-width: 1280px) and (orientation: landscape){
+    /* NAVBAR */
 
-@media (min-width: 1024px){
-    main .about .about-page{
-       max-width: 1024px;
-       margin: auto;
-    }
-
-    main .portofolio .portofolio-page{
-        max-width: 1024px;
-        margin: auto;
-    }
-
-    main .portofolio .portofolio-page h2{
-        margin-top: 3rem;
-        margin-left: 3rem;
-    }
-
-    main .portofolio .portofolio-page h5{
-        margin-left: 3rem;
-    }
-
-    main .about .skill-page{
-        max-width: 1024px;
-        margin: auto;
-    }
-
-    main .skill .grid-container {
-        max-width: 1024px;
-        margin: auto;
-    }
 }
