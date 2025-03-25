@@ -4,86 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="src/fonts/archivo/archivo.css">
-    <link rel="stylesheet" href="src/fonts/clash/clash-grotesk.css">
+    <link rel="stylesheet" href="src/fonts/switzer.css">
     <title>Web Portofolio | Edelweis</title>
 </head>
 <body>
     <header>
         <nav>
-           <div class="nav-mobile">
-                <h3>EDELWEIS</h3>
-                <img src="src/icons/menu.png">
-           </div>
-           <div class="nav-desktop">
-                <h3>EDELWEIS</h3>
-                <ul>
-                    <li class="cv"><button><img src="src/icons/cv.png"></button></li>
-                    <li class="get-touch"><button>GET IN TOUCH</button></li>
-                    <li class="menu"><button>MENU</button></li>
-                </ul>
-           </div>
-       </div>
+            <div class="desktop">
+                <div class="left">
+                    <h3>EDELWEIS</h3>
+                </div>
+                <div class="right">
+                    <div class="button" id="odd">
+                        <label>CV</label>
+                    </div>
+                    <div class="button" id="even">
+                        <label>GET IN TOUCH</label>
+                        <img src="src/icons/right-arrow.png">
+                    </div>
+                    <div class="button" id="odd">
+                        <label>MENU</label>
+                        <img src="src/icons/menu.png">
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section id="home" class="home">
-            <div class="top-text">
-                <p class="left">Seen by 500+ people</p>
-                <div class="icons">
-                    <div class="rows">
-                        <img src="src/icons/html.png">
-                        <label>HTML</label>
+        <section class="home">
+            <div class="container">
+                <div class="title">
+                    <h2>WELCOME TO MY <br>PORTOFOLIO!</h2>
+                </div>
+                <div class="sub">
+                    <p>I’m Raka, a website frontend programmer and <br>UI/UX designer who is enthusiastic about <br>designing a clean and modern UI 
+                        <br>into real website.</p>
+                </div>
+                <div class="button-line">
+                    <div class="button">
+                        <button>EXPLORE MY WORKS</button>
+                        <img src="src/icons/right-arrow.png">
                     </div>
-                    <div class="rows">
-                        <img src="src/icons/css.png">
-                        <label>CSS</label>
-                    </div>
-                    <div class="rows-hidden">
-                        <img src="src/icons/java-script.png">
-                        <label>Javascript</label>
-                    </div>
-                    <div class="rows-hidden">
-                        <img src="src/icons/laravel.png">
-                        <label>Laravel</label>
+                    <div class="line">
+
                     </div>
                 </div>
-                <p class="right">5+ more</p>
-            </div>
-            <div class="title">
-                <h1>WHEN CREATIVITY MEETS CODE</h1>
-            </div>
-            <div class="sub-title">
-                <p>Help you build a website with a clean and modern design</p>
-            </div>
-            <div class="button">
-                <button>SEE MY WORKS</button>
             </div>
         </section>
-        <section id="about" class="about">
-           
-        </section>
-        <section id="portofolio" class="portofolio">
-            
-        </section>
-        <section  id="portofolio" class="skill">
-           
-        </section>
-        <section  id="portofolio" class="experience">
-           
-        </section>
-        <section  id="portofolio" class="type">
-           
-        </section>
-        <section  id="portofolio" class="contact">
-            
+        <section class="about">
+            <div class="container">
+                <div class="left">
+                    <div class="title">
+                        <h1>ABOUT ME</h1>
+                    </div>
+                    <div class="text">
+                        <p>I'm Raka Ikbar Setyadireza, a 2024 Informatics Engineering graduate from Indonesia, passionate about web development, graphic design, game development, and Quality Assurance. I enjoy creating functional digital experiences and continuously exploring new technologies to enhance my skills.</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="picture">
+                        <img src="src/img/hero6.jpg" alt="my picture">
+                    </div>
+                </div>
+            </div>
+            <div class="bot">
+                <div class="left-note">
+                    <div class="note">
+                        <label>This is called whitespace mate
+                            <br>Explore more my world!</label>
+                    </div>
+                </div>
+                <div class="right-note">
+                    <div class="note-up">
+                        <div class="note-up-left">
+                            <label>As clean as can.</label>
+                        </div>
+                        <div class="note-up-right">
+
+                        </div>
+                    </div>
+                    <div class="note-bot">
+                        <div class="note-bot-left">
+
+                        </div>
+                        <div class="note-bot-right">
+                            <label>When creativity <br>meets code.</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-
-    <footer>
-
-    </footer>
 
     <script src="src/script.js"></script>
 </body>
