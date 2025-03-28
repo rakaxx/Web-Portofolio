@@ -63,13 +63,13 @@ button{
 
 .home .title h1{
     text-align: center;
-    font-size: 4vh;
+    font-size: 5vh;
 }
 
 .home .text p{
     text-align: center;
-    font-size: 1.4vh;
-    width: 60%;
+    font-size: 2vh;
+    width: 70%;
     margin: auto;
 }
 
@@ -84,7 +84,7 @@ button{
     background-color: transparent;
     padding: 1.2vh 2.2vh;
     border-radius: 999px;
-    font-size: 1.4vh;
+    font-size: 2vh;
 }
 
 .home .say-hello{
@@ -99,7 +99,7 @@ button{
     font-family: 'Satoshi', sans-serif;
     color: #EFEFEF;
     font-weight: 500;
-    font-size: 1.5vh;
+    font-size: 2vh;
 }
 
 .home .say-hello .icons .icon{
