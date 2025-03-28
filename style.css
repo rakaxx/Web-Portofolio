@@ -3,203 +3,114 @@
 }
 
 body{
-    letter-spacing: 0.5px;
+    margin: 0;
+    padding: 0;
+    background-color: #111111;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-@media (min-width: 1024px){
-    body{
-        background-color: black;
-        color: #EFEFEF;
-        padding: 2vh 7vh;
-        font-family: 'Switzer-Regular', sans-serif;
-    }
+h1{
+    font-family: 'Satoshi', sans-serif;
+    color: #EFEFEF;
+    font-weight: 600;
+}
 
-    h1{
-        font-family: 'Switzer-Bold', sans-serif;
-        font-size: 10vh;
-    }
+h3{
+    font-family: 'Satoshi', sans-serif;
+    color: #EFEFEF;
+    font-weight: 400;
+}
 
-    p{
-        font-family: 'Switzer-ExtraLight', sans-serif;
-        font-size: 2.8vh;
-    }
+p{
+    font-family: 'Poppins', sans-serif;
+    color: #EFEFEF;
+    font-weight: 200;
+}
 
-    label{
-        font-family: 'Switzer-ExtraLight', sans-serif;
-        font-size: 2.3vh;
-    }
+button{
+    font-family: 'Poppins', sans-serif;
+    color: #EFEFEF;
+    font-weight: 500;
+}
 
-    button{
-        font-size: 2vh;
-        letter-spacing: 0.5px;
-    }
+/* NAVBAR */
 
-    .desktop{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+.navbar-mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3vh;
+}
 
-    .desktop .right{
-        display: flex;
-        align-items: center;
-    }
+.navbar-mobile .logo h3{
+    font-size: 2.5vh;
+}
 
-    .desktop .right .button{
-        display: flex;
-        align-items: center;
-        padding: 1.7vh 2.5vh;
-        border-radius: 999px;
-        margin: 0 1vh;
-        font-size: 2vh;
-    }
+.navbar-mobile .burger img{
+    width: 4vh;
+}
 
-    .desktop .right .button label{
-        font-family: 'Switzer-Regular', sans-serif;
-    }
+/* HOME */
 
-    .desktop .right #odd{
-        background-color: #545454;
-    }
+.home{
+    height: 76.7vh;
+}
 
-    .desktop .right #even{
-        background-color: #046D8A;
-    }
+.home .title{
+    margin-top: 15vh;
+}
 
-    .desktop img{
-        filter: invert(1);
-        width: 3vh;
-        margin-left: 1vh;
-    }
+.home .title h1{
+    text-align: center;
+    font-size: 4vh;
+}
 
-    /* HOME */
+.home .text p{
+    text-align: center;
+    font-size: 1.4vh;
+    width: 60%;
+    margin: auto;
+}
 
-    .home{
-        height: 100vh;
-        padding: 0 39vh;
-        padding-top: 5vh;
-    }
-
-    .home .title h2{
-        font-family: 'Switzer-Bold', sans-serif;
-        font-size: 7.5vh;
-    }
-
-    .home .sub p{
-        text-align: right;
-    }
-
-    .home .button-line{
-        width: 100%;
-    }
-
-    .home .button{
-        display: inline-flex;
-        align-items: center;
-        flex-wrap: wrap;
-        background-color: #046D8A;
-        padding: 1vh 3vh;
-        border-radius: 999px;
-    }
-
-    .home .button button{
-        border: none;
-        background-color: #046D8A;
-        padding: 1.7vh 0;
-        border-radius: 999px;
-        color: #EFEFEF;
-    }
-
-    .home .button-line{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .home .button-line .line{
-        width: 40%;
-        border-bottom: 1px solid white;
-    }
-
-    .home .button img{
-        filter: invert(1);
-        width: 3vh;
-        margin-left: 1vh;
-    }
-
-    /* ABOUT */
-
-    .about{
-        height: 90vh;
-    }
+.home .button{
+    text-align: center;
+    margin-top: 10vh;
     
-    .about .container{
-        display: flex;
-        justify-content: space-between;
-    }
+}
 
-    .about .container .left{
-        width: 45%;
-        padding-right: 8vh;
-    }
+.home .button button{
+    border: #EFEFEF solid 1px;
+    background-color: transparent;
+    padding: 1.2vh 2.2vh;
+    border-radius: 999px;
+    font-size: 1.4vh;
+}
 
-    .about .container .left h1{
-        text-align: center;
-        margin-top: 0;
-        margin-bottom: 0;   
-    }
+.home .say-hello{
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
-    .about .container .left p{
-        text-align: justify;
-        margin: 0;
-        padding-top: 1.5vh;
-    }
+.home .say-hello label{
+    font-family: 'Satoshi', sans-serif;
+    color: #EFEFEF;
+    font-weight: 500;
+    font-size: 1.5vh;
+}
 
-    .about .container .right{
-        width: 55%;
-        text-align: right;
-    }
+.home .say-hello .icons .icon{
+    display: inline-block;
+    background-color: #212121;
+    padding: 2vh 2.2vh;
+    border-radius: 999px;
+    margin: 0 0.8vh;
+    margin-top: 2vh;
+}
 
-    .about .container .right .picture img{
-        width: 110.9%;
-        padding-top: 4vh;
-    }
-
-    .about .bot{
-        display: flex;
-        padding-top: 2vh;
-        width: 100%;
-    }
-
-    .about .bot .left-note{
-        padding-top: 20vh;
-        width: 45%;
-    }
-    
-    .about .bot .right-note{
-        display: flex;
-        justify-content: space-between;
-        width: 55%;
-    }
-
-    .about .bot .right-note .note-up{
-        width: 45%;
-    }
-
-    .about .bot .right-note .note-bot{
-        width: 45%;
-    }
-
-    .about .bot .right-note .note-up .note-up-left{
-        border-bottom: 1px solid white;
-        padding-bottom: 2vh;
-    }
-
-    .about .bot .right-note .note-bot .note-bot-right{
-        margin-top: 10vh;
-        padding-top: 2vh;
-        border-top: 1px solid white;
-        text-align: right;
-    }
-    
+.home .say-hello .icons .icon img{
+    width: 3vh;
 }
