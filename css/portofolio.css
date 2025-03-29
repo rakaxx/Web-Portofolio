@@ -227,6 +227,9 @@
     }   
 
     .portofolio .cards .card .card-content .title h5{
+        font-family: 'Poppins', sans-serif;
+        color: #EFEFEF;
+        font-weight: 600;
         font-size: 3.5vh;
     }
 
