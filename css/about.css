@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     padding: 15vh 0;
-    height: 100vh;
+    height: 120vh;
 }
 
 .about .name{
@@ -80,8 +80,6 @@
 }
 
 .about .image{
-    border-left: white solid 1px;
-    border-right: white solid 1px;
     order: 0;
     text-align: center;
 }

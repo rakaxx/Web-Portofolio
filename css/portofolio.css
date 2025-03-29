@@ -1,0 +1,236 @@
+.portofolio{
+    padding: 15vh 3vh;
+    height: 100vh;
+    max-width: 450px;
+    margin: auto;
+}
+
+.portofolio button{
+    border: #EFEFEF solid 1px;
+    background-color: transparent;
+    padding: 1.2vh 2.2vh;
+    border-radius: 999px;
+    font-size: 1.8vh;
+}
+
+.portofolio .cards .card{
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin: 4vh 0;
+}
+
+.portofolio .cards .card .card-image img.desktop{
+    display: none;
+}
+
+
+.portofolio .cards .card .card-image img.mobile{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 13vh;
+    height: 100%;
+}
+
+.portofolio .cards .card .card-content{
+    background-color: #222222;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 1vh 1.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.portofolio .cards .card .card-content .tags{
+    display: inline-flex;
+    font-size: 1vh;
+    border: #EFEFEF solid 1px;
+    border-radius: 999px;
+    padding: 0.2vh 1vh;
+    margin-top: 1vh;
+}
+
+.portofolio .cards .card .card-content .title{
+    padding: 0;
+    margin: 0;
+}
+
+.portofolio .cards .card .card-content .title h5{
+    padding: 0;
+    margin: 0;
+    font-size: 2.5vh;
+    font-weight: 500;
+    padding-top: 1.4vh;
+}
+
+.portofolio .cards .card .card-content .description p{
+    padding: 0;
+    margin: 0;
+    font-size: 1.7vh;
+    padding-top: 0.5vh;
+}
+
+.portofolio .cards .card .card-content .description p label{
+    display: none;
+}
+
+.portofolio .cards .card .card-content .footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.portofolio .cards .card .card-content .footer .seen label,
+.portofolio .cards .card .card-content .footer .seen label label.show{
+    padding: 0;
+    margin: 0;
+    font-size: 1.5vh;
+    font-weight: 500;
+}
+
+.portofolio .cards .card .card-content .footer .seen label label.hidden,
+.portofolio .cards .card .card-content .footer .seen p.hidden,
+.portofolio .cards .card .card-content .footer .like p.hidden{
+    display: none;
+}
+
+.portofolio .cards .card .card-content .footer .like label{
+    padding: 0;
+    margin: 0;
+    font-size: 1.5vh;
+    font-weight: 500; 
+    
+}
+
+.portofolio .cards .card .card-content .footer .button button{
+    background-color: transparent;
+    border: #EFEFEF solid 1px;
+    padding: 0.6vh 1vh;
+    padding-top: 0.7vh;
+    font-size: 1.5vh;
+    border-radius: 999px;
+}
+
+@media (min-width: 720px){
+    .portofolio{
+        max-width: 1024px;
+        padding: 0 10vh;
+        letter-spacing: 0.1vh;
+    }
+
+    .portofolio button{
+        font-size: 2vh;
+        font-weight: 400;
+        padding: 2vh 3vh;
+    }
+
+    .portofolio .cards .card .card-image img.mobile{
+        display: none;
+    }
+
+    .portofolio .cards .card .card-content{
+        padding: 2vh 2.5vh;
+    }
+
+    .portofolio .cards .card .card-content .tags{
+        font-size: 1.7vh;
+        padding: 0.2vh 1.5vh;
+        margin-top: 1vh;
+    }
+
+    .portofolio .cards .card .card-image img.desktop{
+        display: block;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        width: 20vh;
+        height: 100%;
+    }
+
+    .portofolio .cards .card .card-content .title h5{
+        font-size: 3vh;
+        margin-top: 1vh;
+    }
+
+    .portofolio .cards .card .card-content .description p{
+        font-size: 2vh;
+        font-weight: 200;
+    }
+
+    .portofolio .cards .card .card-content .description p label{
+        display: inline;
+    }
+
+    .portofolio .cards .card .card-content .footer .seen label label.show{
+       display: none;
+    }
+
+    .portofolio .cards .card .card-content .footer .seen,
+    .portofolio .cards .card .card-content .footer .like,
+    .portofolio .cards .card .card-content .footer .button{
+        margin-top: 2vh;
+    }
+
+    .portofolio .cards .card .card-content .footer .seen{
+        width: 30%;
+    }
+
+    .portofolio .cards .card .card-content .footer .like{
+        width: 40%;
+    }
+
+
+    .portofolio .cards .card .card-content .footer .seen label{
+        font-size: 2.3vh;
+    }
+
+    .portofolio .cards .card .card-content .footer .like label{
+        font-size: 2.3vh;
+    }
+
+    .portofolio .cards .card .card-content .footer .seen label label.hidden{
+        display: inline;
+        font-size: 2vh;
+    }
+
+    .portofolio .cards .card .card-content .footer .seen p.hidden,
+    .portofolio .cards .card .card-content .footer .like p.hidden{
+        display: inline-block;
+        font-size: 2vh;
+        margin: 0;
+        margin-top: 0.5vh;
+    }
+
+    .portofolio .cards .card .card-content .footer{
+        align-items: normal;
+    }
+    
+
+    .portofolio .cards .card .card-content .footer .button{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .portofolio .cards .card .card-content .footer .button button{
+        padding: 1vh 3vh;
+        padding-top: 1.5vh;
+        font-size: 2vh;
+    }
+
+}
+
+@media (min-width: 1024px){
+    .portofolio h4{
+        font-size: 3.5vh;
+    }   
+
+    .portofolio .cards .card .card-content .title h5{
+        font-size: 3.5vh;
+    }
+
+    .portofolio .cards .card .card-content .footer .seen label label.hidden{
+        font-size: 2.5vh;
+    }
+}
