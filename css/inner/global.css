@@ -1,0 +1,81 @@
+html{
+    font-size: 16px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #111111;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+    font-family: 'Satoshi', sans-serif;
+    color: #EFEFEF;
+    font-weight: 600;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #EFEFEF;
+    font-weight: 600;
+}
+
+h3 {
+    font-family: 'Satoshi', sans-serif;
+    color: #EFEFEF;
+    font-weight: 400;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    color: #EFEFEF;
+    font-weight: 600;
+    font-size: 1.5rem; /* 3vh → 1.5rem */
+}
+
+h5 {
+    font-family: 'Poppins', sans-serif;
+    color: #EFEFEF;
+    font-weight: 600;
+    font-size: 1.3rem; /* 2vh → 1rem */
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    color: #EFEFEF;
+    font-weight: 200;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    color: #EFEFEF;
+    font-weight: 500;
+    background-color: transparent;
+    border: #EFEFEF solid 1px;
+    border-radius: 99px;
+    padding: 0.7rem 1rem;
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+    color: #EFEFEF;
+    font-weight: 200;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #EFEFEF;
+    font-weight: 200;
+}
