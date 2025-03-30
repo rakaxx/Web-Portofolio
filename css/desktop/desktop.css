@@ -1,6 +1,6 @@
-@media (min-width: 1440px) and (max-width: 1919px){
+@media (min-width: 1200px){
     body{
-        letter-spacing: 0.1vh;
+        letter-spacing: 0.1rem;
     }
     
     h1{
@@ -19,14 +19,14 @@
         font-family: 'Poppins', sans-serif;
         color: #EFEFEF;
         font-weight: 600;
-        font-size: 3vh;
+        font-size: 1.5rem;
     }
     
     h5{
         font-family: 'Poppins', sans-serif;
         color: #EFEFEF;
         font-weight: 400;
-        font-size: 2vh;
+        font-size: 1rem;
     }
 
     p{
@@ -53,7 +53,12 @@
         color: #EFEFEF;
         text-decoration: none;
         font-weight: 300;
-        font-size: 2.7vh;
+        font-size: 1.35rem;
+    }
+
+    header, main{
+        max-width: 1200px;
+        margin: auto;
     }
 
     /* NAVBAR */
@@ -68,14 +73,15 @@
         align-items: center;
         padding: 0 5vh;
         width: 100%;
+        max-width: 1200px;
     }
 
     .navbar-desktop .logo h3{
         font-family: 'Satoshi', sans-serif;
         color: #EFEFEF;
         font-weight: 500;
-        font-size: 3.5vh;
-        padding-bottom: 0.3vh;
+        font-size: 1.75rem;
+        padding-bottom: 0.15rem;
     }
 
     .navbar-desktop .list ul{
@@ -90,7 +96,6 @@
         list-style: none;
     }
 
-
     /* HOME */
 
     .home{
@@ -104,7 +109,7 @@
 
     .home .title h1{
         font-weight: 600;
-        font-size: 10vh;
+        font-size: 5rem;
         text-align: left;
         margin: 0;
     }
@@ -114,9 +119,9 @@
         text-align: left;
         padding-top: 2.5vh;
         width: 70%;
-        font-size: 2.5vh;
+        font-size: 1.25rem;
         font-weight: 300;
-        letter-spacing: 0.1vh;
+        letter-spacing: 0.1rem;
     }
 
     .home .button{
@@ -128,7 +133,7 @@
         background-color: transparent;
         border: #EFEFEF solid 1px;
         border-radius: 999px;
-        font-size: 2vh;
+        font-size: 1rem;
         font-weight: 400;
         padding: 1.5vh 2.5vh;
     }
@@ -141,7 +146,7 @@
 
     .home .say-hello label{
         font-weight: 500;
-        font-size: 2vh;
+        font-size: 1rem;
         margin-right: 2vh;
     }
 
@@ -159,26 +164,25 @@
     }
     
     .home .say-hello .icons .icon img{
-        width: 2.5vh;
+        width: 1.25rem;
     }
 
     .sliders {
         display: block;
-        position: absolute; /* Slider sebagai background */
+        position: absolute;
         top: 10vh;
         left: 0;
         width: 100%;
-        height: 90vh; /* Menutupi bagian atas sebagai background */
-        z-index: -1; /* Di belakang konten lain */
+        height: 90vh;
+        z-index: -1;
         overflow: hidden;
         mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
         -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
     }
       
-    /* Penataan posisi horizontal tiap slider */
     .slider-1 {
         position: absolute;
-        left: 10%; /* Di kiri */
+        left: 10%;
     }
     .slider-2 {
         position: absolute;
@@ -187,16 +191,14 @@
     }
     .slider-3 {
         position: absolute;
-        right: 10%; /* Di kanan */
+        right: 10%;
     }
       
-    /* Membuat kontainer dalam tiap slider untuk duplikasi konten */
     .slider-inner {
         display: flex;
         flex-direction: column;
     }
       
-    /* Animasi kontinu */
     .slider-1 .slider-inner,
     .slider-3 .slider-inner {
         animation: slide-down 10s linear infinite;
@@ -206,22 +208,18 @@
         animation: slide-up 10s linear infinite;
     }
       
-    /* Untuk slider-1 dan slider-3 (gerak ke bawah) */
     @keyframes slide-down {
         0%   { transform: translateY(-50%); }
         100% { transform: translateY(0); }
     }
     
-    /* Untuk slider-2 (gerak ke atas) */
     @keyframes slide-up {
         0%   { transform: translateY(0); }
         100% { transform: translateY(-50%); }
     }
   
-      
-    /* Styling untuk gambar slider */
     .item img {
-        width: 37vh; /* Sesuaikan ukuran gambar */
+        width: 37vh;
         height: auto;
         display: block;
         opacity: 10%;
@@ -234,7 +232,7 @@
     .about{
         display: flex;
         flex-direction: row;
-        letter-spacing: 0.1vh;
+        letter-spacing: 0.1rem;
         height: 50vh;
         padding: 0 5vh;
     }
@@ -248,12 +246,12 @@
         display: block;
         text-align: left;
         font-weight: 200;
-        font-size: 2.2vh;
+        font-size: 1.1rem;
     }
 
     .about .name .raka{
         text-align: left;
-        font-size: 6.5vh;
+        font-size: 3.25rem;
         font-weight: 500;
         margin: 0;
     }
@@ -275,7 +273,7 @@
 
     .about .name .wrap .surname .setyadireza{
         margin: 0;
-        font-size: 3vh;
+        font-size: 1.5rem;
         font-weight: 500;
     }
 
@@ -285,18 +283,17 @@
         padding: 1.5vh 0;
     }
 
-
     .about .name .freshgraduate label{
         border: #EFEFEF80 solid 1px;
         padding: 2vh 10.5vh;
-        font-size: 2.2vh;
+        font-size: 1.1rem;
         margin-top: 1vh;
     }
 
     .about .name .my-interest{
         display: block;
         text-align: left;
-        font-size: 2.5vh;
+        font-size: 1.25rem;
         font-weight: 400;
         padding: 4.5vh 0;
     }
@@ -314,7 +311,7 @@
     }
 
     .about .name .interests .interest label{
-        font-size: 2vh;
+        font-size: 1rem;
     }
 
     .about .image{
@@ -329,7 +326,7 @@
 
     .about .image img{
         margin-top: 5vh;
-        width: 40vh;
+        width: 20rem;
         border-radius: 999px;
     }
 
@@ -341,7 +338,7 @@
     }
 
     .about .introduce h4{
-        font-size: 3.5vh;
+        font-size: 1.75rem;
         text-align: left;
         margin: 0;
         padding-bottom: 2vh;
@@ -351,7 +348,7 @@
         text-align: left;
         margin: 0;
         width: 100%;
-        font-size: 2vh;
+        font-size: 1rem;
         font-weight: 200;
         line-height: 25px;
     }
@@ -365,7 +362,7 @@
         display: block;
         text-align: left;
         margin: 0;
-        font-size: 2.2vh;
+        font-size: 1.1rem;
         font-weight: 400;
         padding-left: 2vh;
     }
@@ -374,7 +371,7 @@
         text-align: left;
         padding-left: 2vh;
         margin: 0;
-        font-size: 2vh;
+        font-size: 1rem;
         width: 100%;
     }
 
@@ -385,21 +382,20 @@
         height: 100vh;
         margin: auto;
         margin-top: 50vh;
-        letter-spacing: 0.1vh;
+        letter-spacing: 0.1rem;
     }
 
     .portofolio h4{
-        font-size: 3.5vh;
+        font-size: 1.75rem;
     }
 
     .portofolio button{
         border: #EFEFEF solid 1px;
         background-color: transparent;
-        font-size: 2vh;
+        font-size: 1rem;
         font-weight: 400;
         padding: 1.5vh 2.5vh;
         border-radius: 999px;
-        font-size: 2vh;
         margin-top: 1vh;
     }
 
@@ -436,7 +432,7 @@
 
     .portofolio .cards .card .card-content .tags{
         display: inline-flex;
-        font-size: 1.5vh;
+        font-size: 0.75rem;
         border: #EFEFEF solid 1px;
         border-radius: 999px;
         padding: 0.2vh 1.5vh;
@@ -451,7 +447,7 @@
     .portofolio .cards .card .card-content .title h5{
         padding: 0;
         margin: 0;
-        font-size: 3vh;
+        font-size: 1.5rem;
         font-weight: 500;
         padding-top: 2.5vh;
     }
@@ -459,7 +455,7 @@
     .portofolio .cards .card .card-content .description p{
         padding: 0;
         margin: 0;
-        font-size: 2vh;
+        font-size: 1rem;
         font-weight: 200;
         padding-top: 0.5vh;
         padding-bottom: 1vh;
@@ -494,27 +490,26 @@
     }
 
     .portofolio .cards .card .card-content .footer .seen label{
-        font-size: 2.5vh;
+        font-size: 1.25rem;
         font-weight: 500; 
     }
 
     .portofolio .cards .card .card-content .footer .like label{
         padding: 0;
         margin: 0;
-        font-size: 2.5vh;
+        font-size: 1.25rem;
         font-weight: 500; 
-        
     }
 
     .portofolio .cards .card .card-content .footer .seen label label.hidden{
         display: inline;
-        font-size: 2.5vh;
+        font-size: 1.25rem;
     }
 
     .portofolio .cards .card .card-content .footer .seen p.hidden,
     .portofolio .cards .card .card-content .footer .like p.hidden{
         display: inline-block;
-        font-size: 2vh;
+        font-size: 1rem;
         margin: 0;
         margin-top: 0.5vh;
         margin-right: 1.5vh;
@@ -535,7 +530,7 @@
         border: #EFEFEF solid 1px;
         padding: 1vh 3vh;
         padding-top: 1vh;
-        font-size: 2vh;
+        font-size: 1rem;
         border-radius: 999px;
     }
 }

@@ -4,6 +4,4 @@
 @import url(tablet/tablet-small.css);
 @import url(tablet/tablet-medium.css);
 @import url(tablet/tablet-large.css);
-@import url(desktop/desktop-small.css);
-@import url(desktop/desktop-medium.css);
-@import url(desktop/desktop-large.css);
+@import url(desktop/desktop.css);
