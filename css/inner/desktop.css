@@ -1,537 +1,486 @@
 @import url(global.css);
+
 @media (min-width: 1024px){
-    body{
-        letter-spacing: 0.1rem;
-    }
-    
-    h1{
-        font-family: 'Satoshi', sans-serif;
-        color: #EFEFEF;
-        font-weight: 600;
-    }
-
-    h2{
-        font-family: 'Poppins', sans-serif;
-        color: #EFEFEF;
-        font-weight: 600;
-    }
-
-    h4{
-        font-family: 'Poppins', sans-serif;
-        color: #EFEFEF;
-        font-weight: 600;
-        font-size: 1.5rem;
-    }
-    
-    h5{
-        font-family: 'Poppins', sans-serif;
-        color: #EFEFEF;
-        font-weight: 400;
-        font-size: 1rem;
-    }
-
-    p{
-        font-family: 'Poppins', sans-serif;
-        color: #EFEFEF;
-        font-weight: 200;
-    }
-
-    button{
-        font-family: 'Poppins', sans-serif;
-        color: #EFEFEF;
-        font-weight: 500;
-    }
-
-    label{
-        font-family: 'Poppins', sans-serif;
-        color: #EFEFEF;
-        font-weight: 200;
-    }
-
-    a{
-        font-family: 'Poppins', sans-serif;
-        list-style: none;
-        color: #EFEFEF;
-        text-decoration: none;
-        font-weight: 300;
-        font-size: 1.35rem;
-    }
-
-    header, main{
-        max-width: 1200px;
+    nav{ 
+        max-width: 1024px;
         margin: auto;
-    }
 
-    /* NAVBAR */
+        .navbar-desktop{
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10vh;
 
-    .navbar-mobile{
-        display: none;
-    }
+            .logo{
+                h3{
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                }
+            }
 
-    .navbar-desktop{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 5vh;
-        width: 100%;
-        max-width: 1200px;
-    }
+            .list{
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 3rem;
 
-    .navbar-desktop .logo h3{
-        font-family: 'Satoshi', sans-serif;
-        color: #EFEFEF;
-        font-weight: 500;
-        font-size: 1.75rem;
-        padding-bottom: 0.15rem;
-    }
-
-    .navbar-desktop .list ul{
-        display: flex;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        gap: 5vh;
-    }
-
-    .navbar-desktop .list ul li{
-        list-style: none;
-    }
-
-    /* HOME */
-
-    .home{
-        height: 100vh;
-        padding: 0 15vh;
-    }
-
-    .home .title{
-        margin-top: 10vh;
-    }
-
-    .home .title h1{
-        font-weight: 600;
-        font-size: 5rem;
-        text-align: left;
-        margin: 0;
-    }
-
-    .home .text p{
-        margin: 0;
-        text-align: left;
-        padding-top: 2.5vh;
-        width: 70%;
-        font-size: 1.25rem;
-        font-weight: 300;
-        letter-spacing: 0.1rem;
-    }
-
-    .home .button{
-        text-align: left;
-        margin-top: 5.5vh;
-    }
-
-    .home .button button{
-        background-color: transparent;
-        border: #EFEFEF solid 1px;
-        border-radius: 999px;
-        font-size: 1rem;
-        font-weight: 400;
-        padding: 1.5vh 2.5vh;
-    }
-
-    .home .say-hello{
-        display: flex;
-        align-items: center;
-        margin-top: 5vh;
-    }
-
-    .home .say-hello label{
-        font-weight: 500;
-        font-size: 1rem;
-        margin-right: 2vh;
-    }
-
-    .home .say-hello .icons{
-        display: flex;
-        gap: 1.5vh;
+                    a{
+                        font-size: 0.9rem;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
     }
     
-    .home .say-hello .icons .icon{
-        background-color: #212121;
-        padding: 1vh 1.8vh;
-        padding-top: 1.8vh;
-        border-radius: 999px;
-        margin: 0;
-    }
-    
-    .home .say-hello .icons .icon img{
-        width: 1.25rem;
-    }
-
-    .sliders {
-        display: block;
-        position: absolute;
-        top: 10vh;
-        left: 0;
-        width: 100%;
-        height: 90vh;
-        z-index: -1;
-        overflow: hidden;
-        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-        -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-    }
-      
-    .slider-1 {
-        position: absolute;
-        left: 10%;
-    }
-    .slider-2 {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .slider-3 {
-        position: absolute;
-        right: 10%;
-    }
-      
-    .slider-inner {
-        display: flex;
-        flex-direction: column;
-    }
-      
-    .slider-1 .slider-inner,
-    .slider-3 .slider-inner {
-        animation: slide-down 10s linear infinite;
-    }
-
-    .slider-2 .slider-inner {
-        animation: slide-up 10s linear infinite;
-    }
-      
-    @keyframes slide-down {
-        0%   { transform: translateY(-50%); }
-        100% { transform: translateY(0); }
-    }
-    
-    @keyframes slide-up {
-        0%   { transform: translateY(0); }
-        100% { transform: translateY(-50%); }
-    }
-  
-    .item img {
-        width: 37vh;
-        height: auto;
-        display: block;
-        opacity: 10%;
-        filter: blur(5px) grayscale(100%);
-        margin-top: 5vh;
-    }      
-
-    /* ABOUT */
-
-    .about{
-        display: flex;
-        flex-direction: row;
-        letter-spacing: 0.1rem;
-        height: 50vh;
-        padding: 0 5vh;
-    }
-
-    .about .name{
-        order: 0;
-        margin: 0 auto;
-    }
-
-    .about .name .greetings{
-        display: block;
-        text-align: left;
-        font-weight: 200;
-        font-size: 1.1rem;
-    }
-
-    .about .name .raka{
-        text-align: left;
-        font-size: 3.25rem;
-        font-weight: 500;
-        margin: 0;
-    }
-
-    .about .name .wrap{
-        display: flex;
-        justify-content: start;
-        align-items: center;
-    }
-
-    .about .name .wrap .lines{
-        width: 18vh;
-    }
-
-    .about .name .wrap .lines .line{
-        border-bottom: #EFEFEF80 solid 1px;
-        margin-right: 1vh;
-    }
-
-    .about .name .wrap .surname .setyadireza{
-        margin: 0;
-        font-size: 1.5rem;
-        font-weight: 500;
-    }
-
-    .about .name .freshgraduate{
-        display: flex;
-        justify-content: start;
-        padding: 1.5vh 0;
-    }
-
-    .about .name .freshgraduate label{
-        border: #EFEFEF80 solid 1px;
-        padding: 2vh 10.5vh;
-        font-size: 1.1rem;
-        margin-top: 1vh;
-    }
-
-    .about .name .my-interest{
-        display: block;
-        text-align: left;
-        font-size: 1.25rem;
-        font-weight: 400;
-        padding: 4.5vh 0;
-    }
-
-    .about .name .interests{
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        gap: 2.5vh;
-    }
-
-    .about .name .interests .interest{
-        border-right: #EFEFEF80 solid 1px;
-        padding-right: 2vh;
-    }
-
-    .about .name .interests .interest label{
-        font-size: 1rem;
-    }
-
-    .about .image{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        order: 1;
-        width: 40%;
-        border: none;
-        text-align: center;
-    }
-
-    .about .image img{
-        margin-top: 5vh;
-        width: 20rem;
-        border-radius: 999px;
-    }
-
-    .about .introduce{
-        order: 2;
-        width: 30%;
-        padding-top: 5vh;
-        padding-left: 1vh;
-    }
-
-    .about .introduce h4{
-        font-size: 1.75rem;
-        text-align: left;
-        margin: 0;
-        padding-bottom: 2vh;
-    }
-
-    .about .introduce p{
-        text-align: left;
-        margin: 0;
-        width: 100%;
-        font-size: 1rem;
-        font-weight: 200;
-        line-height: 25px;
-    }
-
-    .about .introduce .creativity{
-        border-left: #EFEFEF80 solid 1px;
-        margin-top: 8vh;
-    }
-
-    .about .introduce .creativity label{
-        display: block;
-        text-align: left;
-        margin: 0;
-        font-size: 1.1rem;
-        font-weight: 400;
-        padding-left: 2vh;
-    }
-
-    .about .introduce .creativity p{
-        text-align: left;
-        padding-left: 2vh;
-        margin: 0;
-        font-size: 1rem;
-        width: 100%;
-    }
-
-    /* PORTOFOLIO */
-
-    .portofolio{
-        padding: 0 5vh;
-        height: 100vh;
+    main {
+        padding: 0 10vh;
+        max-width: 1024px;
         margin: auto;
-        margin-top: 50vh;
-        letter-spacing: 0.1rem;
-    }
 
-    .portofolio h4{
-        font-size: 1.75rem;
-    }
+        .home{
+            align-items: start;
+            text-align: left;
+            padding: 0 4rem;
+            height: 90vh;
+    
+            .sliders{
+                display: block;
+                position: absolute;
+                max-width: 1140px;
+                top: 10vh;
+                left: 0;
+                right: 0;
+                margin-left: auto;
+                margin-right: auto;
+                height: 80vh;
+                z-index: -1;
+                overflow: hidden;
+                mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+                -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+            
+                .slider-1{
+                    position: absolute;
+                    left: 10%;
 
-    .portofolio button{
-        border: #EFEFEF solid 1px;
-        background-color: transparent;
-        font-size: 1rem;
-        font-weight: 400;
-        padding: 1.5vh 2.5vh;
-        border-radius: 999px;
-        margin-top: 1vh;
-    }
+                    .slider-inner {
+                        display: flex;
+                        flex-direction: column;
+                        animation: slide-down 10s linear infinite;
+                    }
+                }
 
-    .portofolio .cards .card{
-        display: flex;
-        justify-content: center;
-        gap: 4px;
-        margin: 4vh 0;
-    }
+                .slider-2 {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                
+                    .slider-inner {
+                        display: flex;
+                        flex-direction: column;
+                        animation: slide-up 10s linear infinite;
+                    }
+                }
 
-    .portofolio .cards .card .card-image img.mobile{
-        display: none;
-    }
+                .slider-3 {
+                    position: absolute;
+                    right: 10%;
 
-    .portofolio .cards .card .card-image img.desktop{
-        display: block;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-        width: 20vh;
-        height: 100%;
-        object-fit: cover;
-        object-position: left;
-    }
+                    .slider-inner {
+                        display: flex;
+                        flex-direction: column;
+                        animation: slide-down 10s linear infinite;
+                    }
+                }
 
-    .portofolio .cards .card .card-content{
-        background-color: #222222;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        padding: 2vh 2.5vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
+                .slider-1, .slider-2, .slider-3{
+                    .slider-inner{
+                        .item img {
+                            width: 18rem;
+                            height: auto;
+                            display: block;
+                            opacity: 10%;
+                            filter: blur(5px) grayscale(100%);
+                            margin-top: 5vh;
+                        } 
+                    }
+                }
+            }
+    
+            .title{
+                height: 45%;
+                padding-top: 3rem;
 
-    .portofolio .cards .card .card-content .tags{
-        display: inline-flex;
-        font-size: 0.75rem;
-        border: #EFEFEF solid 1px;
-        border-radius: 999px;
-        padding: 0.2vh 1.5vh;
-        margin-top: 1vh;
-    }
+                h1{
+                    font-size: 4rem;
+                    font-weight: 600;
+                    margin: 0;
+                }
+            }
+    
+            .text{
+                
+                height: 25%;
 
-    .portofolio .cards .card .card-content .title{
-        padding: 0;
-        margin: 0;
-    }
+                p{
+                    width: 75%;
+                    padding: 0;
+                    margin: 2rem 0;
+                    font-size: 0.9rem;
+                }
+            }
+    
+            .button{
+                
+                height: 15%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+    
+                button{
+                    font-size: 0.9rem;
+                    font-weight: 300;
+                    padding: 0.8rem 1.5rem;
+                }
+            }
+    
+            .say-hello{
+                
+                height: 15%;
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+                gap: 1rem;
+                padding-top: 7rem;
+                padding-bottom: 1.5rem;
+    
+                label{
+                    text-align: center;
+                    font-size: 0.8rem;
+                    font-weight: 400;
+                    margin-bottom: 1rem;
+                }
+    
+                .icons{
+                    display: flex;
+                    gap: 0.7rem;
+                    padding-bottom: 1rem;
+    
+                    .icon{
+                        background-color: #212121;
+                        border-radius: 99px;
+                        padding: 0.5rem 0.8rem;
+    
+                        img{
+                            margin: 0;
+                            padding: 0;
+                            width: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .about{
+            max-width: 1024px;
+            margin: auto;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+            padding: 25vh 0;
+            
 
-    .portofolio .cards .card .card-content .title h5{
-        padding: 0;
-        margin: 0;
-        font-size: 1.5rem;
-        font-weight: 500;
-        padding-top: 2.5vh;
-    }
+            .name{
+                width: 32.5%;
+                order: 0;
+                display: flex;
+                flex-direction: column;
+                margin-top: 2rem;
+                
+    
+                .greetings{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+    
+                    label{
+                        font-size: 0.9rem;
+                        text-align: left;
+                    }
+                }
+    
+                h2.raka{
+                    font-size: 2rem;
+                    margin: 0;
+                    padding: 0;
+                    text-align: left;
+                }
+    
+                .wrap{
+                    display: flex;
+                    justify-content: start;
+                    text-align: left;
+                    gap: 0.5rem;
+                    margin: 0;
+                    padding: 0;
+    
+                    .lines{
+                        width: 4rem;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+    
+                        .line{
+                            border-bottom: #EFEFEF solid 1px;
+                        }
+                    }
+    
+                    .surname{
+                        h2.setyadireza{
+                            font-size: 1.1rem;
+                            margin: 0;
+                            padding: 0;
+                        }
+                    }
+                }
+    
+                .freshgraduate{
+                    margin-top: 1.5rem;
+                    margin-bottom: 3rem;
+                    text-align: left;
 
-    .portofolio .cards .card .card-content .description p{
-        padding: 0;
-        margin: 0;
-        font-size: 1rem;
-        font-weight: 200;
-        padding-top: 0.5vh;
-        padding-bottom: 1vh;
-    }
+                    label{
+                        font-size: 0.9rem;
+                        border: #EFEFEF solid 1px;
+                        padding: 0.5rem 2.5rem;
+                    }
+                }
+    
+                label.my-interest{
+                    font-size: 0.9rem;
+                    font-weight: 400;
+                    margin-bottom: 2.5rem;
+                    text-align: left;
+                }
+    
+                .interests{
+                    display: flex;
+                    justify-content: start;
+                    text-align: left;
+                    gap: 1rem;
+    
+                    .interest{
+                        border-right: #EFEFEF solid 1px;
+    
+                        label{
+                            margin-right: 1rem;
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
+            }
+    
+            .image{
+                order: 1;
+                margin-top: 5rem;
+                width: 35%;
+                padding-right: 4rem;
+    
+                img{
+                    width: 100%;
+                    border-radius: 999px;
+                }
+            }
+    
+            .introduce{
+                order: 2;
+                width: 32.5%;
+    
+                h4{
+                    font-size: 1.5rem;
+                    margin-top: 4rem;
+                    margin-bottom: 0;
+                    text-align: left;
+                }
+    
+                p{
+                    font-size: 0.9rem;
+                    margin-top: 0.5rem;
+                    text-align: left;
+                }
+    
+                .creativity{
+                    margin-top: 3rem;
+                    border-left: #EFEFEF solid 1px;
+                    padding-left: 1rem;
+                    text-align: left;
 
-    .portofolio .cards .card .card-content .footer .seen label label.show{
-        display: none;
-     }
+                    label{
+                        font-size: 0.9rem;
+                        font-weight: 400;
+                    }
+    
+                    p{
+                        font-size: 0.8rem;
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    
+        .portofolio{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            margin-top: 0;
+            min-height: auto;
+            padding: 0;
 
-    .portofolio .cards .card .card-content .description p label{
-        display: inline;
-    }
+            h4{
+                font-size: 1.5rem;
+                text-align: left;
+            }
+    
+            .cards{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 3rem;
+    
+                .card{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 0.3rem;
+    
+                    .card-image{
+                        img.mobile{
+                           display: none;
+                        }
+    
+                        img.desktop{
+                            display: inline-block;
+                            object-fit: cover;
+                            object-position: left;
+                            border-top-left-radius: 0.7rem;
+                            border-bottom-left-radius: 0.7rem;
+                            width: 10rem;
+                            height: 100%;
+                        }
+                    }
+    
+                    .card-content{
+                        background-color: #222222;
+                        border-bottom-left-radius: 0;
+                        border-top-right-radius: 0.7rem;
+                        border-bottom-right-radius: 0.7rem;
+                        padding: 1.5rem;
+    
+                        .tags{
+                            text-align: left;
+    
+                            label{
+                                border: #EFEFEF solid 1px;
+                                border-radius: 999px;
+                                font-size: 0.7rem;
+                                padding: 0.2rem 1rem;
+                            }
+                        }
+    
+                        .title{
+                            h5{
+                                font-size: 1.5rem;
+                                text-align: left;
+                                margin-top: 1.3rem;
+                                margin-bottom: 0.5rem;
+                            }
+                        }
+    
+                        .description{
+                            p{
+                                font-size: 0.9rem;
+                                text-align: left;
+                                margin: 0;
+                                padding: 0;
+                            }
+                        }
+    
+                        .footer{
+                            display: flex;
+                            justify-content: center;
+                            align-items: start;
+                            margin-top: 1.5rem;
+                            gap: 1.5rem;
+                            
+                            .seen, .like{
+                                display: flex;
+                                flex-direction: column;
+                                width: 40%;
 
-    .portofolio .cards .card .card-content .footer{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+                                label{
 
-    .portofolio .cards .card .card-content .footer .seen,
-    .portofolio .cards .card .card-content .footer .like,
-    .portofolio .cards .card .card-content .footer .button{
-        margin-top: 2vh;
-    }
+                                    font-size: 1rem;
+                                    text-align: left;
+                                    font-weight: 400;
+                                }
+    
+                                p.mobile{
+                                    display: none;
+                                }
+    
+                                p.desktop{
+                                    display: block;
+                                    font-size: 0.9rem;
+                                    text-align: left;
+                                    margin: 0;
+                                }
+                            }
+    
+                            .button{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: end;
+                                width: 30%;
 
-    .portofolio .cards .card .card-content .footer .seen{
-        width: 30%;
-    }
+                                .nothing{
+                                    padding: 1.5rem;
+                                }
+                                
+                                .desktop{
+                                    width: 100%;
+                                    height: 100%;
 
-    .portofolio .cards .card .card-content .footer .like{
-        width: 40%;
-    }
-
-    .portofolio .cards .card .card-content .footer .seen label{
-        font-size: 1.25rem;
-        font-weight: 500; 
-    }
-
-    .portofolio .cards .card .card-content .footer .like label{
-        padding: 0;
-        margin: 0;
-        font-size: 1.25rem;
-        font-weight: 500; 
-    }
-
-    .portofolio .cards .card .card-content .footer .seen label label.hidden{
-        display: inline;
-        font-size: 1.25rem;
-    }
-
-    .portofolio .cards .card .card-content .footer .seen p.hidden,
-    .portofolio .cards .card .card-content .footer .like p.hidden{
-        display: inline-block;
-        font-size: 1rem;
-        margin: 0;
-        margin-top: 0.5vh;
-        margin-right: 1.5vh;
-    }
-
-    .portofolio .cards .card .card-content .footer{
-        align-items: normal;
-    }
-
-    .portofolio .cards .card .card-content .footer .button{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .portofolio .cards .card .card-content .footer .button button{
-        background-color: transparent;
-        border: #EFEFEF solid 1px;
-        padding: 1vh 3vh;
-        padding-top: 1vh;
-        font-size: 1rem;
-        border-radius: 999px;
+                                    button{
+                                        display: inline-block;
+                                        width: 100%;
+                                        font-size: 0.9rem;
+                                        padding: 0.5rem 1rem;
+                                        font-weight: 300;
+                                    }
+                                }
+                            }
+                        }
+    
+                        .mobile{
+                            display: none;
+                        }
+                    }
+                }
+            }
+    
+            .projects{
+                button{
+                    margin-top: 4rem;
+                    font-size: 0.9rem;
+                    padding: 0.8rem 2rem;
+                    font-weight: 300;
+                }
+            }
+        }
     }
 }

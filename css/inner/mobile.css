@@ -1,7 +1,5 @@
 @import url(global.css);
 
-/* NAVBAR */
-
 nav{
     .navbar-mobile{
         height: 10vh;
@@ -25,9 +23,10 @@ nav{
 }
 
 main {
+    padding: 0 3vh;
+    
     .home{
         height: 90vh;
-        padding: 0 3vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -38,7 +37,6 @@ main {
         }
 
         .title{
-
             height: 35%;
             display: flex;
             flex-direction: column;
@@ -50,7 +48,6 @@ main {
         }
 
         .text{
-
             height: 20%;
 
             p{
@@ -59,7 +56,6 @@ main {
         }
 
         .button{
-
             height: 15%;
             display: flex;
             flex-direction: column;
@@ -71,7 +67,6 @@ main {
         }
 
         .say-hello{
-
             height: 30%;
             display: flex;
             flex-direction: column;
@@ -110,7 +105,6 @@ main {
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        padding: 0 3vh;
 
         .name{
             
@@ -220,6 +214,7 @@ main {
 
             .creativity{
                 margin-top: 3rem;
+                
                 label{
                     font-size: 1rem;
                     font-weight: 400;
@@ -240,7 +235,6 @@ main {
         text-align: center;
         margin-top: 10rem;
         min-height: auto;
-        padding: 0 3vh;
 
         .cards{
             display: flex;
