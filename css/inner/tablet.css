@@ -303,7 +303,6 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            text-align: center;
             margin-top: 10rem;
             min-height: auto;
             padding: 0 3vh;
@@ -427,6 +426,140 @@
                     padding: 1rem 2rem;
                 }
             }
+        }
+
+        .skill{
+            padding: 0 3vh;
+
+            h4{
+                font-size: 2.2rem;
+            }
+
+            .cards{
+                gap: 2rem;
+    
+                .card{
+                    width: calc(50% - 1rem);
+                    background-color: #222222;
+                    border-radius: 0.5rem;
+                    text-align: center;
+                    padding: 2rem;
+    
+                    .icon{
+                        img{
+                            width: 4rem;
+                        }
+                    }
+    
+                    .icon-no-filter{
+                        img{
+                            width: 4rem;
+                        }
+                    }
+    
+                    .title{
+                        h5{
+                            font-size: 2rem;
+                        }
+                    }
+    
+                    .text{
+                        p{
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+    
+            }
+        }
+
+        .experience{
+            padding: 0 3vh;
+
+            h4{
+                font-size: 2.2rem;
+            }
+    
+            .text{
+                p{
+                    padding: 31rem 0;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        .contact{
+            padding: 0 3vh;
+    
+            .image{
+                display: flex;
+                flex-wrap: wrap; /* Ini yang memungkinkan item turun ke baris berikutnya */
+                align-items: flex-end;
+                
+                img{
+                    width: 30%;
+                    margin-bottom: 0;
+                }
+    
+                h1{
+                    display: block;
+                    font-size: 4rem;
+                    font-weight: 700;
+                    margin-left: 1rem;
+                }
+            }
+    
+            h1.mobile{
+                display: none;
+            }
+
+            h1{
+                text-align: left;
+                font-size: 4rem;
+                font-weight: 700;
+            }
+    
+            .email{
+                margin-top: 5rem;
+                margin-bottom: 12rem;
+                display: flex;
+                gap: 1rem;
+    
+                .text{
+                    label{
+                        border: #EFEFEF solid 1px;
+                        border-radius: 999px;
+                        padding: 0.5rem 1rem;
+                        font-size: 1.3rem;
+                    }
+                }
+
+                .lines{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+
+                    .line-top{
+                        width: 100%;
+                        border-bottom: #EFEFEF solid 1px;
+                        height: 1rem;
+                    }
+
+                    .line-bot{
+                        width: 100%;
+                        height: 1rem;
+                    }
+                }
+            }
+    
+            .icons{
+                display: flex;
+                justify-content: end;
+                margin-bottom: 3rem;
+                gap: 1rem;
+            }
+    
+    
         }
     }
 }

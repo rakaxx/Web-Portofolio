@@ -87,6 +87,7 @@ main {
                     background-color: #212121;
                     border-radius: 99px;
                     padding: 0.8rem 1rem;
+                    padding-top: 0.9rem;
 
                     img{
                         margin: 0;
@@ -235,6 +236,10 @@ main {
         text-align: center;
         margin-top: 10rem;
         min-height: auto;
+
+        h4{
+            text-align: left;
+        }
 
         .cards{
             display: flex;
@@ -396,5 +401,83 @@ main {
             }
 
         }
+    }
+
+    .experience{
+        margin-top: 10rem;
+        min-height: auto;
+
+        .text{
+            .sub-desktop{
+                display: none;
+            }
+
+            p{
+                opacity: 0.5;
+                text-align: center;
+                padding: 20rem 0;
+
+                img{
+                    width: 1rem;
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .contact{
+        margin-top: 10rem;
+        min-height: auto;
+        text-align: center;
+
+        .image{
+            img{
+                width: 60%;
+                border-radius: 999px;
+                margin-bottom: 3rem;
+            }
+
+            h1{
+                display: none;
+            }
+        }
+
+        h1.mobile, h1{
+            font-size: 2.1rem;
+            margin: 0;
+        }
+
+        .email{
+            margin-top: 3rem;
+            margin-bottom: 12rem;
+
+            .text{
+                label{
+                    border: #EFEFEF solid 1px;
+                    border-radius: 999px;
+                    padding: 0.5rem 1rem;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+
+        .icons{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+
+            .icon{
+                background-color: #212121;
+                padding: 0.8rem 1rem;
+                border-radius: 999px;
+                padding-top: 0.9rem;
+
+                img{
+                    width: 1.5rem;
+                }
+            }
+        }
+
+
     }
 }
