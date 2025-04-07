@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://api.fontshare.com/v2/css?f[]=poppins@1&f[]=satoshi@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <title>Web Portofolio | Edelweis</title>
 </head>
 <body>
     <header>
         <nav>
             <div class="navbar-desktop">
-                <div class="logo">
+                <div class="logo" data-aos="fade-right">
                     <h3>EDELWEIS</h3>
                 </div>
-                <div class="list">
+                <div class="list" data-aos="fade-left">
                     <ul>
                         <li><a href="">PORTOFOLIO</a></li>
                         <li><a href="">CONTACT</a></li>
@@ -66,13 +67,13 @@
                 </div>
               </div>
             </div>
-            <div class="title">
+            <div class="title" data-aos="fade-up">
                 <h1>WELCOME TO MY <br>PORTOFOLIO</h1>
             </div>
-            <div class="text">
+            <div class="text" data-aos="fade-up">
                 <p>Hi, I’m Raka - I program a website and design a clean, minimalistic and user friendly - Currently based in Indonesia.</p>
             </div>
-            <div class="button">
+            <div class="button" data-aos="fade-up">
                 <button>EXPLORE MY PROJECTS</button>
             </div>
             <div class="say-hello">
@@ -88,7 +89,7 @@
             </div>
         </section>
         <section class="about">
-            <div class="name">
+            <div class="name" data-aos="fade-right">
                 <div class="greetings">
                     <label>Greetings</label>
                 </div>
@@ -118,10 +119,10 @@
                     </div>
                 </div>
             </div>
-            <div class="image">
+            <div class="image" data-aos="fade-up">
                 <img src="src/img/hero7.png" alt="me.png">
             </div>
-            <div class="introduce">
+            <div class="introduce" data-aos="fade-left">
                 <h4>ABOUT ME</h4>
                 <p>I'm Raka Ikbar Setyadireza, a 2024 Informatics Engineering graduate from Indonesia, passionate about web development, design, game development, and QA. I love to design UI/UX and I love to program a website and games.</p>
                 <div class="creativity">
@@ -131,9 +132,9 @@
             </div>
         </section>
         <section class="portofolio">
-            <h4>PORTOFOLIO</h4>
+            <h4 data-aos="fade-right">PORTOFOLIO</h4>
             <div class="cards">
-                <div class="card">
+                <div class="card" data-aos="fade-left">
                     <div class="card-image">
                         <img class="mobile" src="src/portofolio-img/m e-agenda.png" alt="portofolio-image.png">
                         <img class="desktop" src="src/portofolio-img/p e-agenda.png" alt="portofolio-image.png">
@@ -179,7 +180,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-right">
                     <div class="card-image">
                         <img class="mobile" src="src/portofolio-img/m evabs.png" alt="portofolio-image.png">
                         <img class="desktop" src="src/portofolio-img/p evabs.png" alt="portofolio-image.png">
@@ -226,13 +227,13 @@
                     </div>
                 </div>
             </div>
-            <div class="projects">
+            <div class="projects" data-aos="fade-up">
                 <button>EXPLORE MORE MY PROJECTS</button>
             </div>
         </section>
         <section class="skill">
-            <h4>WHAT I WORK WITH</h4>
-            <div class="cards">
+            <h4 data-aos="fade-right">WHAT I WORK WITH</h4>
+            <div class="cards" data-aos="fade-up">
                 <div class="card">
                     <div class="icon">
                         <img src="src/icons/html.png">
@@ -378,28 +379,28 @@
                 </div>
             </div>
         </section>
-        <section class="experience">
+        <section class="experience" data-aos="fade-up">
             <h4>EXPERIENCE</h4>
-            <div class="text">
+            <div class="text" data-aos="fade-left">
                 <div class="sub-desktop"><label>MY TIMELINE</label></div>
                 <p>No Experience Yet <img src="src/icons/circle.png"></p>
             </div>
         </section>
         <section class="contact">
             <div class="image">
-                <img src="src/img/hero5-mobile.jpg">
-                <h1>LET'S WORK</h1>
+                <img src="src/img/hero5-mobile.jpg" data-aos="fade-right">
+                <h1 data-aos="fade-left">LET'S WORK</h1>
             </div>
-            <h1 class="mobile">LETS'S WORK</h1>
-            <h1>TOGETHER!</h1>
+            <h1 class="mobile" data-aos="fade-up">LETS'S WORK</h1>
+            <h1 data-aos="fade-up">TOGETHER!</h1>
             <div class="email">
-                <div class="text"><label>rakaikbarsetyadireza@gmail.com</label></div>
-                <div class="lines">
+                <div class="text" data-aos="fade-up"><label>rakaikbarsetyadireza@gmail.com</label></div>
+                <div class="lines" data-aos="fade-left">
                     <div class="line-top"></div>
                     <div class="line-bot"></div>
                 </div>
             </div>
-            <div class="icons">
+            <div class="icons" data-aos="fade-right">
                 <div class="icon">
                     <img src="src/icons/github.png">
                 </div>
@@ -420,5 +421,9 @@
     </main>
     
     <script src="src/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
