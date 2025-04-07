@@ -493,7 +493,7 @@ main {
         .icons{
             display: flex;
             justify-content: space-between;
-            margin-bottom: 1rem;
+            padding-bottom: 1rem;
 
             .icon{
                 background-color: #212121;
