@@ -588,7 +588,7 @@
             .icons{
                 display: flex;
                 justify-content: end;
-                margin-bottom: 2rem;
+                padding-bottom: 2rem;
                 gap: 1rem;
             }
     

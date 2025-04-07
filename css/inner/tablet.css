@@ -555,7 +555,7 @@
             .icons{
                 display: flex;
                 justify-content: end;
-                margin-bottom: 3rem;
+                padding-bottom: 3rem;
                 gap: 1rem;
             }
     
