@@ -177,6 +177,7 @@
                         img{
                             margin: 0;
                             padding: 0;
+                            padding-top: 0.2rem;
                             width: 1rem;
                         }
                     }

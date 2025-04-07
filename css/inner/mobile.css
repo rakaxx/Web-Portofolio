@@ -350,4 +350,30 @@ main {
             }
         }
     }
+
+    .skill{
+        margin-top: 10rem;
+        min-height: auto;
+
+        .cards{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+
+            .card{
+                width: calc(50% - 1rem);
+                background-color: #222222;
+                border-radius: 0.5rem;
+                text-align: center;
+                padding: 2rem 1rem;
+
+                .icon{
+                    img{
+                        width: 2.5rem;
+                    }
+                }
+            }
+
+        }
+    }
 }
