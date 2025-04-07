@@ -1,5 +1,6 @@
 html{
     font-size: 14px;
+    scroll-behavior: smooth;
 }
 
 *{
@@ -79,6 +80,27 @@ a{
     font-family: 'Poppins', sans-serif;
     color: #EFEFEF;
     font-weight: 200;
+}
+
+a:active{
+    color: #205A92;
+}
+
+a:hover{
+    color: #549bdd;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #205A92;
+    border: #205A92 solid 1px;
+    cursor: pointer;
+}
+
+button:active{
+    background-color: #0a2e50;
+    border: #0a2e50 solid 1px;
+    cursor: pointer;
 }
 
 /* ANIMASI */

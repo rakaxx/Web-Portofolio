@@ -1,429 +1,450 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://api.fontshare.com/v2/css?f[]=poppins@1&f[]=satoshi@1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    <title>Web Portofolio | Edelweis</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="navbar-desktop">
-                <div class="logo" data-aos="fade-right">
-                    <h3>EDELWEIS</h3>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://api.fontshare.com/v2/css?f[]=poppins@1&f[]=satoshi@1&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+        <title>Web Portofolio | Edelweis</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="navbar-desktop">
+                    <div class="logo" data-aos="fade-right">
+                        <h3>EDELWEIS</h3>
+                    </div>
+                    <div class="list" data-aos="fade-left">
+                        <ul>
+                            <li><a href="#skill">SKILL</a></li>
+                            <li><a href="https://www.canva.com/design/DAGj-Zk_FTg/m9R9MNYwVfVyqwstIxIs-Q/edit?utm_content=DAGj-Zk_FTg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">CV</a></li>
+                            <li><a href="#contact">GET IN TOUCH</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="list" data-aos="fade-left">
-                    <ul>
-                        <li><a href="">PORTOFOLIO</a></li>
-                        <li><a href="">CONTACT</a></li>
-                        <li><a href="">CV</a></li>
-                        <li><a href="">GET IN TOUCH</a></li>
+                <div class="navbar-mobile">
+                    <div class="nav">
+                        <div class="logo">
+                            <h3>EDELWEIS</h3>
+                        </div>
+                        <div class="burger" onclick="toggleMenu()">
+                            <img id="burgerIcon"src="src/icons/burger-bar.png" alt="menu" />
+                        </div>
+                    </div>
+                
+                    <ul class="mobile-menu" id="mobileMenu">
+                        <a href="#skill"><li>SKILL</li></a>
+                        <a href="src/files/CV.pdf" target="_blank"><li>CV</li></a>
+                        <a href="#contact"><li>GET IN TOUCH</li></a>
                     </ul>
-                </div>
-            </div>
-            <div class="navbar-mobile">
-                <div class="logo">
-                    <h3>EDELWEIS</h3>
-                </div>
-                <div class="burger">
-                    <img src="src/icons/burger-bar.png">
-                </div>
-            </div>
-        </nav>
-    </header>
+                </div>            
+            </nav>
+        </header>
 
-    <main>
-        <section class="home">
-            <div class="sliders">
-                <div class="slider-1">
-                  <div class="slider-inner">
-                    <div class="item"><img src="src/portofolio-img/slider e-agenda.png"></div>
-                    <div class="item"><img src="src/portofolio-img/slider evabs.png"></div>
-                    <!-- Duplikasi konten -->
-                    <div class="item"><img src="src/portofolio-img/slider e-agenda.png"></div>
-                    <div class="item"><img src="src/portofolio-img/slider evabs.png"></div>
-                  </div>
-                </div>
-                <div class="slider-2">
-                  <div class="slider-inner">
-                    <div class="item"><img src="src/portofolio-img/slider e-agenda.png"></div>
-                    <div class="item"><img src="src/portofolio-img/slider evabs.png"></div>
-                    <!-- Duplikasi konten -->
-                    <div class="item"><img src="src/portofolio-img/slider e-agenda.png"></div>
-                    <div class="item"><img src="src/portofolio-img/slider evabs.png"></div>
-                  </div>
-                </div>
-                <div class="slider-3">
-                  <div class="slider-inner">
-                    <div class="item"><img src="src/portofolio-img/slider e-agenda.png"></div>
-                    <div class="item"><img src="src/portofolio-img/slider evabs.png"></div>
-                    <!-- Duplikasi konten -->
-                    <div class="item"><img src="src/portofolio-img/slider e-agenda.png"></div>
-                    <div class="item"><img src="src/portofolio-img/slider evabs.png"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="title" data-aos="fade-up">
-                <h1>WELCOME TO MY <br>PORTOFOLIO</h1>
-            </div>
-            <div class="text" data-aos="fade-up">
-                <p>Hi, I’m Raka - I program a website and design a clean, minimalistic and user friendly - Currently based in Indonesia.</p>
-            </div>
-            <div class="button" data-aos="fade-up">
-                <button>EXPLORE MY PROJECTS</button>
-            </div>
-            <div class="say-hello">
-                <label>SAY HELLO</label>
-                <div class="icons">
-                    <div class="icon">
-                        <img src="src/icons/instagram.png">
+        <main>
+            <section class="home">
+                <div class="sliders">
+                    <div class="slider-1">
+                    <div class="slider-inner">
+                        <div class="item"><img src="src/portofolio-img/slider e-agenda.png"></div>
+                        <div class="item"><img src="src/portofolio-img/slider evabs.png"></div>
+                        <!-- Duplikasi konten -->
+                        <div class="item"><img src="src/portofolio-img/slider e-agenda.png"></div>
+                        <div class="item"><img src="src/portofolio-img/slider evabs.png"></div>
                     </div>
-                    <div class="icon">
-                        <img src="src/icons/linkedin.png">
+                    </div>
+                    <div class="slider-2">
+                    <div class="slider-inner">
+                        <div class="item"><img src="src/portofolio-img/slider e-agenda.png"></div>
+                        <div class="item"><img src="src/portofolio-img/slider evabs.png"></div>
+                        <!-- Duplikasi konten -->
+                        <div class="item"><img src="src/portofolio-img/slider e-agenda.png"></div>
+                        <div class="item"><img src="src/portofolio-img/slider evabs.png"></div>
+                    </div>
+                    </div>
+                    <div class="slider-3">
+                    <div class="slider-inner">
+                        <div class="item"><img src="src/portofolio-img/slider e-agenda.png"></div>
+                        <div class="item"><img src="src/portofolio-img/slider evabs.png"></div>
+                        <!-- Duplikasi konten -->
+                        <div class="item"><img src="src/portofolio-img/slider e-agenda.png"></div>
+                        <div class="item"><img src="src/portofolio-img/slider evabs.png"></div>
+                    </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="about">
-            <div class="name" data-aos="fade-right">
-                <div class="greetings">
-                    <label>Greetings</label>
                 </div>
-                <h2 class="raka">RAKA IKBAR</h2>
-                <div class="wrap">
-                    <div class="lines">
-                        <div class="line"></div>
-                        <div></div>
-                    </div>
-                    <div class="surname">
-                        <h2 class="setyadireza">SETYADIREZA</h2>
-                    </div>
+                <div class="title" data-aos="fade-up">
+                    <h1>WELCOME TO MY <br>PORTOFOLIO</h1>
                 </div>
-                <div class="freshgraduate">
-                    <label>Freshgraduate</label>
+                <div class="text" data-aos="fade-up">
+                    <p>Hi, I’m Raka - I program a website and design a clean, minimalistic and user friendly - Currently based in Indonesia.</p>
                 </div>
-                <label class="my-interest">My Interest</label>
-                <div class="interests">
-                    <div class="interest">
-                        <label>UI/UX <br>DESIGN</label>
-                    </div>
-                    <div class="interest">
-                        <label>WEB <br>DEVELOP</label>
-                    </div>
-                    <div class="interest">
-                        <label>GAME <br>DEVELOP</label>        
-                    </div>
+                <div class="button" data-aos="fade-up">
+                    <button onclick="window.location.href='#portofolio';">EXPLORE MY PROJECTS</button>
                 </div>
-            </div>
-            <div class="image" data-aos="fade-up">
-                <img src="src/img/hero7.png" alt="me.png">
-            </div>
-            <div class="introduce" data-aos="fade-left">
-                <h4>ABOUT ME</h4>
-                <p>I'm Raka Ikbar Setyadireza, a 2024 Informatics Engineering graduate from Indonesia, passionate about web development, design, game development, and QA. I love to design UI/UX and I love to program a website and games.</p>
-                <div class="creativity">
-                    <label>MY FAVOURITE LINE</label>
-                    <p>“When creativity meets code”</p>
-                </div>
-            </div>
-        </section>
-        <section class="portofolio">
-            <h4 data-aos="fade-right">PORTOFOLIO</h4>
-            <div class="cards">
-                <div class="card" data-aos="fade-left">
-                    <div class="card-image">
-                        <img class="mobile" src="src/portofolio-img/m e-agenda.png" alt="portofolio-image.png">
-                        <img class="desktop" src="src/portofolio-img/p e-agenda.png" alt="portofolio-image.png">
-                    </div>
-                    <div class="card-content">
-                        <div>
-                            <div class="tags">
-                                <label>HTML, CSS, PHP, Laravel</label>
+                <div class="say-hello">
+                    <label>SAY HELLO</label>
+                    <div class="icons">
+                        <a href="https://www.instagram.com/sdgvxx_" target="_blank">
+                            <div class="icon">
+                                <img src="src/icons/instagram.png">
                             </div>
-                            <div class="title">
-                                <h5>E-AGENDA</h5>
+                        </a>
+                        <a href="https://www.linkedin.com/in/risetyadireza" target="_blank">
+                            <div class="icon">
+                                <img src="src/icons/linkedin.png">
                             </div>
-                            <div class="description">
-                                <p>E-Agenda is a teaching agenda based on website fot the teachers in Dharma Kusuma Cianjur. <label class="hidden">This website helping teachers manage with view, create, update and delete their agenda teaching effectively.</label></p>
-                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="about">
+                <div class="name" data-aos="fade-right">
+                    <div class="greetings">
+                        <label>Greetings</label>
+                    </div>
+                    <h2 class="raka">RAKA IKBAR</h2>
+                    <div class="wrap">
+                        <div class="lines">
+                            <div class="line"></div>
+                            <div></div>
                         </div>
-                        <div>
-                            <div class="footer">
-                                <div class="seen">
-                                    <label>Over 500+</label>
-                                    <p class="mobile">Seen</p>
-                                    <p class="desktop">People opened and seen this project</p>
+                        <div class="surname">
+                            <h2 class="setyadireza">SETYADIREZA</h2>
+                        </div>
+                    </div>
+                    <div class="freshgraduate">
+                        <label>Freshgraduate</label>
+                    </div>
+                    <label class="my-interest">My Interest</label>
+                    <div class="interests">
+                        <div class="interest">
+                            <label>UI/UX <br>DESIGN</label>
+                        </div>
+                        <div class="interest">
+                            <label>WEB <br>DEVELOP</label>
+                        </div>
+                        <div class="interest">
+                            <label>GAME <br>DEVELOP</label>        
+                        </div>
+                    </div>
+                </div>
+                <div class="image" data-aos="fade-up">
+                    <img src="src/img/hero7.png" alt="me.png">
+                </div>
+                <div class="introduce" data-aos="fade-left">
+                    <h4>ABOUT ME</h4>
+                    <p>I'm Raka Ikbar Setyadireza, a 2024 Informatics Engineering graduate from Indonesia, passionate about web development, design, game development, and QA. I love to design UI/UX and I love to program a website and games.</p>
+                    <div class="creativity">
+                        <label>MY FAVOURITE LINE</label>
+                        <p>“When creativity meets code”</p>
+                    </div>
+                </div>
+            </section>
+            <section id="portofolio" class="portofolio">
+                <h4 data-aos="fade-right">PORTOFOLIO</h4>
+                <div class="cards">
+                    <div class="card" data-aos="fade-left">
+                        <div class="card-image">
+                            <img class="mobile" src="src/portofolio-img/m e-agenda.png" alt="portofolio-image.png">
+                            <img class="desktop" src="src/portofolio-img/p e-agenda.png" alt="portofolio-image.png">
+                        </div>
+                        <div class="card-content">
+                            <div>
+                                <div class="tags">
+                                    <label>HTML, CSS, PHP, Laravel</label>
                                 </div>
-                                <div class="like">
-                                    <label>500+ Likes</label>
-                                    <p class="mobile">Clicked</p>
-                                    <p class="desktop">Clicked from people who found this interesting and useful</p>
+                                <div class="title">
+                                    <h5>E-AGENDA</h5>
                                 </div>
-                                <div class="button">
-                                    <div class="nothing">
-
+                                <div class="description">
+                                    <p>E-Agenda is a teaching agenda based on website fot the teachers in Dharma Kusuma Cianjur. <label class="hidden">This website helping teachers manage with view, create, update and delete their agenda teaching effectively.</label></p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="footer">
+                                    <div class="seen">
+                                        <label>Over 500+</label>
+                                        <p class="mobile">Seen</p>
+                                        <p class="desktop">People opened and seen this project</p>
                                     </div>
-                                    <div class="desktop">
-                                        <div>
-                                            <button>SEE PROJECT</button>
+                                    <div class="like">
+                                        <label>500+ Likes</label>
+                                        <p class="mobile">Clicked</p>
+                                        <p class="desktop">Clicked from people who found this interesting and useful</p>
+                                    </div>
+                                    <div class="button">
+                                        <div class="nothing">
+
+                                        </div>
+                                        <div class="desktop">
+                                            <div>
+                                                <button>SEE PROJECT</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="mobile">
-                                <button>SEE PROJECT</button>
+                                <div class="mobile">
+                                    <button>SEE PROJECT</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="card" data-aos="fade-right">
-                    <div class="card-image">
-                        <img class="mobile" src="src/portofolio-img/m evabs.png" alt="portofolio-image.png">
-                        <img class="desktop" src="src/portofolio-img/p evabs.png" alt="portofolio-image.png">
-                    </div>
-                    <div class="card-content">
-                        <div>
-                            <div class="tags">
-                                <label>C#, Unity, 2D, Education Game</label>
-                            </div>
-                            <div class="title">
-                                <h5>EVABS</h5>
-                            </div>
-                            <div class="description">
-                                <p>Evabs is an english education game for fourth grade in Ciwalen Elementary School. <label class="hidden">This game helps students learning english by increasing their vocabulary</label></p>
-                            </div>
+                    <div class="card" data-aos="fade-right">
+                        <div class="card-image">
+                            <img class="mobile" src="src/portofolio-img/m evabs.png" alt="portofolio-image.png">
+                            <img class="desktop" src="src/portofolio-img/p evabs.png" alt="portofolio-image.png">
                         </div>
-                        <div>
-                            <div class="footer">
-                                <div class="seen">
-                                    <label>Over 500+</label>
-                                    <p class="mobile">Seen</p>
-                                    <p class="desktop">People opened and seen this project</p>
+                        <div class="card-content">
+                            <div>
+                                <div class="tags">
+                                    <label>C#, Unity, 2D, Education Game</label>
                                 </div>
-                                <div class="like">
-                                    <label>500+ Likes</label>
-                                    <p class="mobile">Clicked</p>
-                                    <p class="desktop">Clicked from people who found this interesting and useful</p>
+                                <div class="title">
+                                    <h5>EVABS</h5>
                                 </div>
-                                <div class="button">
-                                    <div class="nothing">
-
+                                <div class="description">
+                                    <p>Evabs is an english education game for fourth grade in Ciwalen Elementary School. <label class="hidden">This game helps students learning english by increasing their vocabulary</label></p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="footer">
+                                    <div class="seen">
+                                        <label>Over 500+</label>
+                                        <p class="mobile">Seen</p>
+                                        <p class="desktop">People opened and seen this project</p>
                                     </div>
-                                    <div class="desktop">
-                                        <div>
-                                            <button>SEE PROJECT</button>
+                                    <div class="like">
+                                        <label>500+ Likes</label>
+                                        <p class="mobile">Clicked</p>
+                                        <p class="desktop">Clicked from people who found this interesting and useful</p>
+                                    </div>
+                                    <div class="button">
+                                        <div class="nothing">
+
+                                        </div>
+                                        <div class="desktop">
+                                            <div>
+                                                <button>SEE PROJECT</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="mobile">
-                                <button>SEE PROJECT</button>
+                                <div class="mobile">
+                                    <button>SEE PROJECT</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="projects" data-aos="fade-up">
-                <button>EXPLORE MORE MY PROJECTS</button>
-            </div>
-        </section>
-        <section class="skill">
-            <h4 data-aos="fade-right">WHAT I WORK WITH</h4>
-            <div class="cards" data-aos="fade-up">
-                <div class="card">
-                    <div class="icon">
-                        <img src="src/icons/html.png">
+                <div class="projects" data-aos="fade-up">
+                    <button>EXPLORE MORE MY PROJECTS</button>
+                </div>
+            </section>
+            <section id="skill" class="skill">
+                <h4 data-aos="fade-right">WHAT I WORK WITH</h4>
+                <div class="cards" data-aos="fade-up">
+                    <div class="card">
+                        <div class="icon">
+                            <img src="src/icons/html.png">
+                        </div>
+                        <div class="title">
+                            <h5>HTML</h5>
+                        </div>
+                        <div class="text">
+                            <p>Familiar with HTML for structuring web pages, ensuring proper semantics and accessibility.</p>
+                        </div>
                     </div>
-                    <div class="title">
-                        <h5>HTML</h5>
+                    <div class="card">
+                        <div class="icon">
+                            <img src="src/icons/css.png">
+                        </div>
+                        <div class="title">
+                            <h5>CSS</h5>
+                        </div>
+                        <div class="text">
+                            <p>Have experience using CSS to style web pages, including layout techniques like Flexbox and Grid.</p>
+                        </div>
                     </div>
-                    <div class="text">
-                        <p>Familiar with HTML for structuring web pages, ensuring proper semantics and accessibility.</p>
+                    <div class="card">
+                        <div class="icon">
+                            <img src="src/icons/java-script.png">
+                        </div>
+                        <div class="title">
+                            <h5>Javascript</h5>
+                        </div>
+                        <div class="text">
+                            <p>Currently learning JavaScript to build interactive web features, focusing on DOM manipulation and event handling.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icon-no-filter">
+                            <img src="src/icons/php.png">
+                        </div>
+                        <div class="title">
+                            <h5>PHP</h5>
+                        </div>
+                        <div class="text">
+                            <p>Learned and applied PHP during internship projects to build dynamic websites, including form processing and database integration.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icon-no-filter">
+                            <img src="src/icons/c-sharp.png">
+                        </div>
+                        <div class="title">
+                            <h5>C#</h5>
+                        </div>
+                        <div class="text">
+                            <p>Used C# in Unity for 2D game development, focusing on scripting gameplay, handling input, collisions, and elements.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icon">
+                            <img src="src/icons/java.png">
+                        </div>
+                        <div class="title">
+                            <h5>Java</h5>
+                        </div>
+                        <div class="text">
+                            <p>Studied Java with a focus on object-oriented programming. Built console and GUI applications using OOP concept.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icon">
+                            <img src="src/icons/mysql.png">
+                        </div>
+                        <div class="title">
+                            <h5>MySql</h5>
+                        </div>
+                        <div class="text">
+                            <p>Worked with MySQL to design relational databases, write SQL queries, and perform CRUD operations in web-based projects.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icon">
+                            <img src="src/icons/laravel.svg">
+                        </div>
+                        <div class="title">
+                            <h5>Laravel</h5>
+                        </div>
+                        <div class="text">
+                            <p>Used Laravel in internship projects to develop web apps using MVC structure, routing, and Eloquent ORM for database operations.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icon">
+                            <img src="src/icons/Tailwind.png">
+                        </div>
+                        <div class="title">
+                            <h5>Tailwind</h5>
+                        </div>
+                        <div class="text">
+                            <p>Created modern and responsive UIs using Tailwind’s utility classes.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icon">
+                            <img src="src/icons/bootstrap.png">
+                        </div>
+                        <div class="title">
+                            <h5>Bootstrap</h5>
+                        </div>
+                        <div class="text">
+                            <p>Built responsive websites with Bootstrap’s grid system, components, and utilities for layout and styling.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icon">
+                            <img src="src/icons/figma.png">
+                        </div>
+                        <div class="title">
+                            <h5>Figma</h5>
+                        </div>
+                        <div class="text">
+                            <p>Designed UI layouts and prototypes in Figma, applying basic UX principles and collaborating through design iterations.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icon">
+                            <img src="src/icons/illustrator.png">
+                        </div>
+                        <div class="title">
+                            <h5>Adobe Illustrator</h5>
+                        </div>
+                        <div class="text">
+                            <p>Used Illustrator to create vector illustrations, icons, and logo designs, practicing layout, color, and typography.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icon">
+                            <img src="src/icons/unity.png">
+                        </div>
+                        <div class="title">
+                            <h5>Unity</h5>
+                        </div>
+                        <div class="text">
+                            <p>Developed 2D and 3D games in Unity using C#, handling player input, collision, UI, and basic gameplay mechanics.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="icon">
-                        <img src="src/icons/css.png">
-                    </div>
-                    <div class="title">
-                        <h5>CSS</h5>
-                    </div>
-                    <div class="text">
-                        <p>Have experience using CSS to style web pages, including layout techniques like Flexbox and Grid.</p>
+            </section>
+            <section class="experience" data-aos="fade-up">
+                <h4>EXPERIENCE</h4>
+                <div class="text" data-aos="fade-left">
+                    <div class="sub-desktop"><label>MY TIMELINE</label></div>
+                    <p>No Experience Yet <img src="src/icons/circle.png"></p>
+                </div>
+            </section>
+            <section id="contact" class="contact">
+                <div class="image">
+                    <img src="src/img/hero5-mobile.jpg" data-aos="fade-right">
+                    <h1 data-aos="fade-left">LET'S WORK</h1>
+                </div>
+                <h1 class="mobile" data-aos="fade-up">LETS'S WORK</h1>
+                <h1 data-aos="fade-up">TOGETHER!</h1>
+                <div class="email">
+                    <div class="text" data-aos="fade-up"><button onclick="window.location.href='mailto:rakaikbarsetyadireza@gmail.com?subject=Lets%Work$Together!';">rakaikbarsetyadireza@gmail.com</button></div>
+                    <div class="lines" data-aos="fade-left">
+                        <div class="line-top"></div>
+                        <div class="line-bot"></div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="icon">
-                        <img src="src/icons/java-script.png">
-                    </div>
-                    <div class="title">
-                        <h5>Javascript</h5>
-                    </div>
-                    <div class="text">
-                        <p>Currently learning JavaScript to build interactive web features, focusing on DOM manipulation and event handling.</p>
-                    </div>
+                <div class="icons" data-aos="fade-right">
+                    <a href="https://github.com/rakaxx" target="_blank">
+                        <div class="icon">
+                            <img src="src/icons/github.png">
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/sdgvxx_" target="_blank">
+                        <div class="icon">
+                            <img src="src/icons/instagram.png">
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/risetyadireza" target="_blank">
+                        <div class="icon">
+                            <img src="src/icons/linkedin.png">
+                        </div>
+                    </a>
+                    <a href="https://www.behance.net/rakaikbars" target="_blank">
+                        <div class="icon">
+                            <img src="src/icons/behance.png">
+                        </div>
+                    </a>
+                    <a href="https://www.youtube.com/@setyv1376" target="_blank">
+                        <div class="icon">
+                            <img src="src/icons/youtube.png">
+                        </div>
+                    </a>
                 </div>
-                <div class="card">
-                    <div class="icon-no-filter">
-                        <img src="src/icons/php.png">
-                    </div>
-                    <div class="title">
-                        <h5>PHP</h5>
-                    </div>
-                    <div class="text">
-                        <p>Learned and applied PHP during internship projects to build dynamic websites, including form processing and database integration.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="icon-no-filter">
-                        <img src="src/icons/c-sharp.png">
-                    </div>
-                    <div class="title">
-                        <h5>C#</h5>
-                    </div>
-                    <div class="text">
-                        <p>Used C# in Unity for 2D game development, focusing on scripting gameplay, handling input, collisions, and elements.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="icon">
-                        <img src="src/icons/java.png">
-                    </div>
-                    <div class="title">
-                        <h5>Java</h5>
-                    </div>
-                    <div class="text">
-                        <p>Studied Java with a focus on object-oriented programming. Built console and GUI applications using OOP concept.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="icon">
-                        <img src="src/icons/mysql.png">
-                    </div>
-                    <div class="title">
-                        <h5>MySql</h5>
-                    </div>
-                    <div class="text">
-                        <p>Worked with MySQL to design relational databases, write SQL queries, and perform CRUD operations in web-based projects.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="icon">
-                        <img src="src/icons/laravel.svg">
-                    </div>
-                    <div class="title">
-                        <h5>Laravel</h5>
-                    </div>
-                    <div class="text">
-                        <p>Used Laravel in internship projects to develop web apps using MVC structure, routing, and Eloquent ORM for database operations.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="icon">
-                        <img src="src/icons/Tailwind.png">
-                    </div>
-                    <div class="title">
-                        <h5>Tailwind</h5>
-                    </div>
-                    <div class="text">
-                        <p>Created modern and responsive UIs using Tailwind’s utility classes.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="icon">
-                        <img src="src/icons/bootstrap.png">
-                    </div>
-                    <div class="title">
-                        <h5>Bootstrap</h5>
-                    </div>
-                    <div class="text">
-                        <p>Built responsive websites with Bootstrap’s grid system, components, and utilities for layout and styling.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="icon">
-                        <img src="src/icons/figma.png">
-                    </div>
-                    <div class="title">
-                        <h5>Figma</h5>
-                    </div>
-                    <div class="text">
-                        <p>Designed UI layouts and prototypes in Figma, applying basic UX principles and collaborating through design iterations.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="icon">
-                        <img src="src/icons/illustrator.png">
-                    </div>
-                    <div class="title">
-                        <h5>Adobe Illustrator</h5>
-                    </div>
-                    <div class="text">
-                        <p>Used Illustrator to create vector illustrations, icons, and logo designs, practicing layout, color, and typography.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="icon">
-                        <img src="src/icons/unity.png">
-                    </div>
-                    <div class="title">
-                        <h5>Unity</h5>
-                    </div>
-                    <div class="text">
-                        <p>Developed 2D and 3D games in Unity using C#, handling player input, collision, UI, and basic gameplay mechanics.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="experience" data-aos="fade-up">
-            <h4>EXPERIENCE</h4>
-            <div class="text" data-aos="fade-left">
-                <div class="sub-desktop"><label>MY TIMELINE</label></div>
-                <p>No Experience Yet <img src="src/icons/circle.png"></p>
-            </div>
-        </section>
-        <section class="contact">
-            <div class="image">
-                <img src="src/img/hero5-mobile.jpg" data-aos="fade-right">
-                <h1 data-aos="fade-left">LET'S WORK</h1>
-            </div>
-            <h1 class="mobile" data-aos="fade-up">LETS'S WORK</h1>
-            <h1 data-aos="fade-up">TOGETHER!</h1>
-            <div class="email">
-                <div class="text" data-aos="fade-up"><label>rakaikbarsetyadireza@gmail.com</label></div>
-                <div class="lines" data-aos="fade-left">
-                    <div class="line-top"></div>
-                    <div class="line-bot"></div>
-                </div>
-            </div>
-            <div class="icons" data-aos="fade-right">
-                <div class="icon">
-                    <img src="src/icons/github.png">
-                </div>
-                <div class="icon">
-                    <img src="src/icons/instagram.png">
-                </div>
-                <div class="icon">
-                    <img src="src/icons/linkedin.png">
-                </div>
-                <div class="icon">
-                    <img src="src/icons/behance.png">
-                </div>
-                <div class="icon">
-                    <img src="src/icons/youtube.png">
-                </div>
-            </div>
-        </section>
-    </main>
-    
-    <script src="src/script.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-</body>
-</html>
+            </section>
+        </main>
+        
+        <script src="src/script.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+    </html>

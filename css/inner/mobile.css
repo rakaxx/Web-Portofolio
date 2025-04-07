@@ -2,19 +2,48 @@
 
 nav{
     .navbar-mobile{
-        height: 10vh;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 3vh;
+        .nav{
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 3vh;
 
-        .logo h3{
-            font-size: 1.3rem;
+            .logo h3{
+                font-size: 1.3rem;
+            }
+
+            .burger img{
+                width: 2rem;
+            }
+
         }
 
-        .burger img{
-            width: 2rem;
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            background-color: #212121;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            top: 8vh;
+            left: 0;
+            padding: 1rem;
+            z-index: 10;
+
+            li{
+                margin: 1rem 0;
+
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+            }
         }
+        
+        .mobile-menu.active {
+            display: flex;
+        }        
     }
     
     .navbar-desktop{
@@ -452,7 +481,7 @@ main {
             margin-bottom: 12rem;
 
             .text{
-                label{
+                button{
                     border: #EFEFEF solid 1px;
                     border-radius: 999px;
                     padding: 0.5rem 1rem;
@@ -468,7 +497,7 @@ main {
 
             .icon{
                 background-color: #212121;
-                padding: 0.8rem 1rem;
+                padding: 0.65rem 1rem;
                 border-radius: 999px;
                 padding-top: 0.9rem;
 

@@ -172,12 +172,12 @@
                     .icon{
                         background-color: #212121;
                         border-radius: 99px;
-                        padding: 0.5rem 0.8rem;
+                        padding: 0.4rem 0.8rem;
     
                         img{
                             margin: 0;
                             padding: 0;
-                            padding-top: 0.2rem;
+                            padding-top: 0.3rem;
                             width: 1rem;
                         }
                     }
