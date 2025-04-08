@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=poppins@1&f[]=satoshi@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <title>Web Portofolio | Edelweis</title>
+</head>
+<body>
+    <main>
+        <section class="upper">
+            <div class="image" data-aos="fade-up">
+                <img src="../src/portofolio-img/e-agenda.png">
+            </div>
+            <div class="title" data-aos="fade-up">
+                <h1>E-Agenda</h1>
+                <p>Web-based application for managing and organizing events, tasks, and schedules.</p>
+                <label>Timeline</label>
+                <div class="periodic" data-aos="fade-right">
+                    <div class="item">
+                        <img src="../src/icons/circle.png" alt="periodic icon">
+                        <p>February 2023</p>
+                    </div>
+                    <div class="lines">
+                        <div id="line-diff" class="line">
+
+                        </div>
+                        <div class="line">
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../src/icons/circle.png" alt="periodic icon">
+                        <p>August 2023</p>
+                    </div>
+                </div>      
+            </div>
+        </section>
+        <section class="middle">
+            <div class="content" data-aos="fade-up">
+                <label>Description</label>
+                <p>This project was the first one I worked on to fulfill the graduation requirement for my internship at university. It was the development of a web-based application designed to help teachers manage their teaching agendas. The application was specifically built for teachers at SMA Dharma Kusuma in Cianjur, Indonesia. The development used PHP as the programming language and Laravel as the backend framework, along with frontend frameworks such as Bootstrap. I successfully completed the application within the given timeline and received positive feedback from the users.</p>
+            </div>
+            <div class="design">
+                <label>Design UI Preview</label>
+                <div>
+                    <img src="../src/portofolio-img/agenda/dashboard.jpg" data-aos="fade-right">
+                    <img src="../src/portofolio-img/agenda/agenda.jpg" data-aos="fade-left">
+                    <img src="../src/portofolio-img/agenda/agenda-isi.jpg" data-aos="fade-right">
+                    <img src="../src/portofolio-img/agenda/draf.jpg" data-aos="fade-left">
+                </div>
+                <p data-aos="fade-up">This design was intended specifically for the teacher role. There are three roles in total, each with its own user interface and features designed specifically for their needs.</p>
+            </div>
+        </section>
+        <section class="bottom">
+            <div class="button">
+                <button onclick="window.location.href='../index.html#portofolio';">
+                    <img src="../src/icons/previous.png">
+                    <label>Back</label>
+                </button>
+            </div>
+        </section>
+    </main>
+    
+    <script src="../src/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

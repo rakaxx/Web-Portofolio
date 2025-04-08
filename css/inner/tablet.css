@@ -372,27 +372,15 @@
                         }
     
                         .footer{
-                            display: flex;
-                            justify-content: start;
-                            align-items: start;
-                            margin-top: 1.5rem;
-                            gap: 5rem;
+                            gap: 3rem;
                             
                             .seen, .like{
                                 label{
                                     font-size: 1.5rem;
-                                    text-align: left;
-                                    font-weight: 400;
                                 }
     
-                                p.mobile{
+                                p{
                                     font-size: 1.3rem;
-                                    text-align: left;
-                                    margin: 0;
-                                }
-    
-                                p.desktop{
-                                    display: none;
                                 }
                             }
     
@@ -416,14 +404,6 @@
                             }
                         }
                     }
-                }
-            }
-    
-            .projects{
-                button{
-                    margin-top: 4rem;
-                    font-size: 1.3rem;
-                    padding: 1rem 2rem;
                 }
             }
         }
