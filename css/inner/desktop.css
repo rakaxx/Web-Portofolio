@@ -529,6 +529,32 @@
                         font-weight: 400;
                     }
                 }
+
+                h5{
+                    margin-top: 1rem;
+                    margin-bottom: 0;
+
+                    .img-desktop{
+                        display: inline-block;
+                    }
+
+                    .img-mobile{
+                        display: none;
+                    }
+
+                    img{
+                        width: 0.9rem;
+                    }
+                }
+
+                #job, #periode{
+                    font-size: 1.1rem;
+                }
+
+                .detail{
+                    padding-right: 1.3rem;
+                    text-align: right;
+                }
     
                 p{
                     opacity: 0.5;
